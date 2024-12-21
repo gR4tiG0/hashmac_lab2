@@ -1,0 +1,11 @@
+20x10
+1: ./hellman  163.54s user 0.02s system 99% cpu 2:43.83 total
+2: ./hellman  163.65s user 0.02s system 199% cpu 1:22.03 total
+4: ./hellman  163.80s user 0.01s system 397% cpu 41.206 total
+8: ./hellman  233.15s user 0.05s system 737% cpu 31.641 total
+10: ./hellman  268.45s user 0.09s system 951% cpu 28.220 total
+12: ./hellman  303.90s user 0.13s system 1153% cpu 26.368 total
+14: ./hellman  318.24s user 0.08s system 1158% cpu 27.488 total
+
+
+--> 8 is optimal

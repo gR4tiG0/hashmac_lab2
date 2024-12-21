@@ -2,11 +2,19 @@
 #include <stdlib.h>
 #include <stdint.h>
 #include <stdbool.h>
+#include <dirent.h>
+
+#ifndef DT_REG
+#define DT_REG 8
+#endif
+
 #include <string.h>
 #include <blake2.h>
 #include <fcntl.h>
 #include <unistd.h>
 #include <pthread.h>
+#include <sys/stat.h>
+#include <sys/types.h>
 
 #define uint128_t __uint128_t
 
@@ -15,6 +23,8 @@
 #define MAX_CHAIN_LENGTH 0x400//0x400
 #define NUM_CHAINS 0x100000//0x100000
 #define BLAKE2B_OUTBYTES 32
+#define TABLE_DIR "./task2_tables"
+#define NUM_THREADS 8
 
 #define TABLE_FILENAME "./task2_tables/f1c4a7015d90901c168dea5f00000000_20x10.table"
 
@@ -32,6 +42,9 @@ void load_table(const char *filename, uint32_t (*table)[2], size_t num_chains, u
 void *generate_chunk(void* args);
 void generate_table(uint32_t (*table)[2], uint128_t seed, bool verbose);
 bool search_preimage(uint32_t (*table)[2], uint32_t hash, uint128_t seed, uint128_t *preimage, bool verbose);
+void crack_on_multiple_tables();
+void* check_on_table(void* args);
+void* search_preimage_thread(void* args);
 
 typedef struct {
     uint32_t (*table)[2];
@@ -42,6 +55,18 @@ typedef struct {
     int id;
 } ThreadArgs;
 
+typedef struct {
+    uint32_t (*tables)[NUM_CHAINS][2];
+    uint128_t *seeds;
+    size_t table_count;
+    uint32_t target_hash;
+    uint128_t *preimage;
+    bool *found;
+    pthread_mutex_t *mutex;
+    size_t start;
+    size_t end;
+    int id;
+} SearchThreadArgs;
 
 void generate_multiple_tables(size_t num_tables, size_t num_chains, size_t max_chain_length, size_t blake2b_outbytes) {
     const char *dir_name = "task2_tables";
@@ -65,100 +90,235 @@ void generate_multiple_tables(size_t num_tables, size_t num_chains, size_t max_c
     }
 }
 
-
-int main()
+void* search_preimage_thread(void* args) 
 {
-    printf("Hellman's time-memory tradeoff\n");
-    printf("Parameters: K = %d, L = %d\n", NUM_CHAINS, MAX_CHAIN_LENGTH);
-    printf("Using BLAKE2b with %d-byte output\n", BLAKE2B_OUTBYTES);
-    // size_t num_tables = 256;
-    // size_t num_chains = NUM_CHAINS;
-    // size_t max_chain_length = MAX_CHAIN_LENGTH;
-    // size_t blake2b_outbytes = BLAKE2B_OUTBYTES;
+    SearchThreadArgs* threadArgs = (SearchThreadArgs*)args;
+    uint32_t (*tables)[NUM_CHAINS][2] = threadArgs->tables;
+    uint128_t *seeds = threadArgs->seeds;
+    size_t table_count = threadArgs->table_count;
+    uint32_t target_hash = threadArgs->target_hash;
+    uint128_t *preimage = threadArgs->preimage;
+    bool *found = threadArgs->found;
+    pthread_mutex_t *mutex = threadArgs->mutex;
+    size_t start = threadArgs->start;
+    size_t end = threadArgs->end;
+    int id  = threadArgs->id;
 
-    // generate_multiple_tables(num_tables, num_chains, max_chain_length, blake2b_outbytes);
-    uint128_t seed;
+    // printf("[%d] Thread: %zu-%zu\n", id, start, end);
 
-    uint32_t (*table)[2] = malloc(sizeof(uint32_t) * NUM_CHAINS * 2);
-    if (table == NULL)
-    {
-        perror("Failed to allocate memory for table");
-        return 1;
+    for (size_t j = start; j < end; j++) {
+        pthread_mutex_lock(mutex);
+        if (*found) {
+            // printf("[%d] Found by another thread\n", id);
+            pthread_mutex_unlock(mutex);
+            break;
+        }
+        pthread_mutex_unlock(mutex);
+
+        if (search_preimage(tables[j], target_hash, seeds[j], preimage, false)) {
+            uint8_t hash[BLAKE2B_OUTBYTES];
+            union {
+                uint128_t value;
+                uint8_t bytes[sizeof(uint128_t)];
+            } input;
+            input.value = __builtin_bswap128(*preimage);
+
+            blake2b(hash, input.bytes, NULL, BLAKE2B_OUTBYTES, sizeof(uint128_t), 0);
+            uint32_t x = truncate_hash(hash);
+
+            if (x == target_hash) {
+                // printf("[%d] Preimage found by thread in table %lu:\n", id, j);
+                pthread_mutex_lock(mutex);
+                *found = true;
+                pthread_mutex_unlock(mutex);
+                break;
+            }
+            *preimage = 0;
+        }
     }
 
-    if (access(TABLE_FILENAME, F_OK) != -1)
-    {
-        printf("Table exists, loading...\n");
-        load_table(TABLE_FILENAME, table, NUM_CHAINS, &seed);
-    } else {
-        return 1;
+    return NULL;
+}
+
+void crack_on_multiple_tables()
+{
+    DIR *dir;
+    struct dirent *ent;
+    if ((dir = opendir(TABLE_DIR)) == NULL) {
+        perror("Failed to open directory");
+        return;
     }
 
-    
-    // else 
-    // {
-    //     printf("Table does not exist, generating...\n");
-    //     seed = generate_random_seed();
-    //     srand(seed);
-    //     generate_table(table, seed, false);
-    //     save_table(TABLE_FILENAME, table, NUM_CHAINS, seed);
-    // }
-    // printf("Seed: %016llx%016llx\n", (unsigned long long)(seed >> 64), (unsigned long long)seed);
-    // // print_table(table);
+    uint32_t (*tables)[NUM_CHAINS][2] = malloc(sizeof(uint32_t) * NUM_CHAINS * 2 * 256);
+    uint128_t seeds[256];
+    size_t table_count = 0;
+
+    while ((ent = readdir(dir)) != NULL) {
+        if (ent->d_type == DT_REG) {
+            char file_path[256];
+            snprintf(file_path, sizeof(file_path), "%s/%s", TABLE_DIR, ent->d_name);
+            load_table(file_path, tables[table_count], NUM_CHAINS, &seeds[table_count]);
+            table_count++;
+            if (table_count >= 256) break;
+        }
+    }
+    closedir(dir);
+
+    if (table_count == 0) {
+        printf("No tables found in the directory.\n");
+        free(tables);
+        return;
+    }
+
+    printf("Loaded %zu tables.\n", table_count);
+
     uint32_t counter = 0;
     uint128_t preimage = 0;
-    
-    // if (search_preimage(table, 0xdeadbeef, seed, &preimage, false))
-    // {
-    //     printf("Preimage found: %016llx%016llx\n", (unsigned long long)(preimage >> 64), (unsigned long long)preimage);
-    // }
+
     printf("Searching for preimages...\n");
-    for (size_t i = 0; i < 10000; i++)
-    {
+    for (size_t i = 0; i < 10000; i++) {
         if (i % 1000 == 0)
-            printf("Iteration %d\n", i);
-        // uint32_t target_hash = rand() & 0xFFFFFFFF;
+            printf("Iteration %zu\n", i);
+
         uint32_t msg = rand() & 0xFFFFFFFF;
         uint8_t hash[BLAKE2B_OUTBYTES];
         union {
             uint128_t value;
             uint8_t bytes[sizeof(uint128_t)];
         } input;
-        input.value = __builtin_bswap128(reduce(msg, seed));
-
-        // printf("Generating hash for input %08x\n", msg);
-        // printf("Reduced input: %016llx%016llx\n", (unsigned long long)(input.value >> 64), (unsigned long long)input.value);
+        input.value = __builtin_bswap128(reduce(msg, seeds[0]));
 
         blake2b(hash, input.bytes, NULL, BLAKE2B_OUTBYTES, sizeof(uint128_t), 0);
         uint32_t target_hash = truncate_hash(hash);
-        // printf("Target hash: %08x, current starus of preimage %016llx%016llx\n", target_hash,(unsigned long long)(preimage >> 64), (unsigned long long)preimage);
-        if (search_preimage(table, target_hash, seed, &preimage, false))
-        {
-            // check if preimage is correct
-            // printf("Preimage found: %016llx%016llx\n", (unsigned long long)(preimage >> 64), (unsigned long long)preimage);
-            uint8_t hash[BLAKE2B_OUTBYTES];
-            union {
-                uint128_t value;
-                uint8_t bytes[sizeof(uint128_t)];
-            } input;
-            input.value = __builtin_bswap128(preimage);
-            // printf("Checking if preimage is correct: %016llx%016llx\n", (unsigned long long)(input.value >> 64), (unsigned long long)input.value);
 
-            blake2b(hash, input.bytes, NULL, BLAKE2B_OUTBYTES, sizeof(uint128_t), 0);
-            uint32_t x = truncate_hash(hash);
-            
-            // printf("Checking if hash is correct: %08x\n", x);
+        bool found = false;
+        pthread_t threads[NUM_THREADS];
+        SearchThreadArgs threadArgs[NUM_THREADS];
+        pthread_mutex_t mutex = PTHREAD_MUTEX_INITIALIZER;
 
-            if (x == target_hash) {
-                // printf("Preimage is correct\n");
-                counter++;
-            }
-            preimage = 0;
+        size_t tables_per_thread = table_count / NUM_THREADS;
+        for (size_t t = 0; t < NUM_THREADS; t++) {
+            threadArgs[t].tables = tables;
+            threadArgs[t].seeds = seeds;
+            threadArgs[t].table_count = table_count;
+            threadArgs[t].target_hash = target_hash;
+            threadArgs[t].preimage = &preimage;
+            threadArgs[t].found = &found;
+            threadArgs[t].mutex = &mutex;
+            threadArgs[t].start = t * tables_per_thread;
+            threadArgs[t].end = (t == NUM_THREADS - 1) ? table_count : (t + 1) * tables_per_thread;
+            threadArgs[t].id = t;
+
+            pthread_create(&threads[t], NULL, search_preimage_thread, &threadArgs[t]);
         }
-        // printf("\n");
+
+        for (size_t t = 0; t < NUM_THREADS; t++) {
+            pthread_join(threads[t], NULL);
+        }
+
+        if (found) {
+            counter++;
+        }
     }
+
     printf("Success rate: %d/10000\n", counter);
-    free(table);
+    free(tables);
+}
+
+int main()
+{
+    printf("Hellman's time-memory tradeoff\n");
+    printf("Parameters: K = %d, L = %d\n", NUM_CHAINS, MAX_CHAIN_LENGTH);
+    printf("Using BLAKE2b with %d-byte output\n", BLAKE2B_OUTBYTES);
+    crack_on_multiple_tables();
+    // size_t num_tables = 256;
+    // size_t num_chains = NUM_CHAINS;
+    // size_t max_chain_length = MAX_CHAIN_LENGTH;
+    // size_t blake2b_outbytes = BLAKE2B_OUTBYTES;
+
+    // generate_multiple_tables(num_tables, num_chains, max_chain_length, blake2b_outbytes);
+    // uint128_t seed;
+
+    // uint32_t (*table)[2] = malloc(sizeof(uint32_t) * NUM_CHAINS * 2);
+    // if (table == NULL)
+    // {
+    //     perror("Failed to allocate memory for table");
+    //     return 1;
+    // }
+
+    // if (access(TABLE_FILENAME, F_OK) != -1)
+    // {
+    //     printf("Table exists, loading...\n");
+    //     load_table(TABLE_FILENAME, table, NUM_CHAINS, &seed);
+    // } else {
+    //     return 1;
+    // }
+
+    
+    // // else 
+    // // {
+    // //     printf("Table does not exist, generating...\n");
+    // //     seed = generate_random_seed();
+    // //     srand(seed);
+    // //     generate_table(table, seed, false);
+    // //     save_table(TABLE_FILENAME, table, NUM_CHAINS, seed);
+    // // }
+    // // printf("Seed: %016llx%016llx\n", (unsigned long long)(seed >> 64), (unsigned long long)seed);
+    // // // print_table(table);
+    // uint32_t counter = 0;
+    // uint128_t preimage = 0;
+    
+    // // if (search_preimage(table, 0xdeadbeef, seed, &preimage, false))
+    // // {
+    // //     printf("Preimage found: %016llx%016llx\n", (unsigned long long)(preimage >> 64), (unsigned long long)preimage);
+    // // }
+    // printf("Searching for preimages...\n");
+    // for (size_t i = 0; i < 10000; i++)
+    // {
+    //     if (i % 1000 == 0)
+    //         printf("Iteration %d\n", i);
+    //     // uint32_t target_hash = rand() & 0xFFFFFFFF;
+    //     uint32_t msg = rand() & 0xFFFFFFFF;
+    //     uint8_t hash[BLAKE2B_OUTBYTES];
+    //     union {
+    //         uint128_t value;
+    //         uint8_t bytes[sizeof(uint128_t)];
+    //     } input;
+    //     input.value = __builtin_bswap128(reduce(msg, seed));
+
+    //     // printf("Generating hash for input %08x\n", msg);
+    //     // printf("Reduced input: %016llx%016llx\n", (unsigned long long)(input.value >> 64), (unsigned long long)input.value);
+
+    //     blake2b(hash, input.bytes, NULL, BLAKE2B_OUTBYTES, sizeof(uint128_t), 0);
+    //     uint32_t target_hash = truncate_hash(hash);
+    //     // printf("Target hash: %08x, current starus of preimage %016llx%016llx\n", target_hash,(unsigned long long)(preimage >> 64), (unsigned long long)preimage);
+    //     if (search_preimage(table, target_hash, seed, &preimage, false))
+    //     {
+    //         // check if preimage is correct
+    //         // printf("Preimage found: %016llx%016llx\n", (unsigned long long)(preimage >> 64), (unsigned long long)preimage);
+    //         uint8_t hash[BLAKE2B_OUTBYTES];
+    //         union {
+    //             uint128_t value;
+    //             uint8_t bytes[sizeof(uint128_t)];
+    //         } input;
+    //         input.value = __builtin_bswap128(preimage);
+    //         // printf("Checking if preimage is correct: %016llx%016llx\n", (unsigned long long)(input.value >> 64), (unsigned long long)input.value);
+
+    //         blake2b(hash, input.bytes, NULL, BLAKE2B_OUTBYTES, sizeof(uint128_t), 0);
+    //         uint32_t x = truncate_hash(hash);
+            
+    //         // printf("Checking if hash is correct: %08x\n", x);
+
+    //         if (x == target_hash) {
+    //             // printf("Preimage is correct\n");
+    //             counter++;
+    //         }
+    //         preimage = 0;
+    //     }
+    //     // printf("\n");
+    // }
+    // printf("Success rate: %d/10000\n", counter);
+    // free(table);
     return 0;
 }
 
@@ -275,7 +435,7 @@ void *generate_chunk(void* args)
 
 void generate_table(uint32_t (*table)[2], uint128_t seed, bool verbose)
 {
-    size_t num_threads = 8; // Adjust the number of threads as needed
+    size_t num_threads = NUM_THREADS; // Adjust the number of threads as needed
     pthread_t threads[num_threads];
     ThreadArgs threadArgs[num_threads];
 

@@ -1,0 +1,709 @@
+$ time ./hellman
+Hellman's time-memory tradeoff
+Parameters: K = 1048576, L = 1024
+Using BLAKE2b with 32-byte output
+Table does not exist, generating...
+Thread #0: Generating with parameters: start = 0, end = 131072
+Thread #1: Generating with parameters: start = 131072, end = 262144
+Thread #2: Generating with parameters: start = 262144, end = 393216
+Thread #4: Generating with parameters: start = 524288, end = 655360
+Thread #3: Generating with parameters: start = 393216, end = 524288
+Thread #5: Generating with parameters: start = 655360, end = 786432
+Thread #6: Generating with parameters: start = 786432, end = 917504
+Thread #7: Generating with parameters: start = 917504, end = 1048576
+Seed: d0dd708a3ea11c49c8cffe4200000000
+./hellman  237.14s user 0.05s system 736% cpu 32.209 total
+
+
+$ time ./hellman
+Hellman's time-memory tradeoff
+Parameters: K = 1048576, L = 2048
+Using BLAKE2b with 32-byte output
+Table does not exist, generating...
+Thread #0: Generating with parameters: start = 0, end = 131072
+Thread #1: Generating with parameters: start = 131072, end = 262144
+Thread #3: Generating with parameters: start = 393216, end = 524288
+Thread #4: Generating with parameters: start = 524288, end = 655360
+Thread #2: Generating with parameters: start = 262144, end = 393216
+Thread #5: Generating with parameters: start = 655360, end = 786432
+Thread #6: Generating with parameters: start = 786432, end = 917504
+Thread #7: Generating with parameters: start = 917504, end = 1048576
+Seed: d8daf6982a4130c3d7a0e88b00000000
+./hellman  442.71s user 0.04s system 732% cpu 1:00.42 total
+
+
+$ time ./hellman
+Hellman's time-memory tradeoff
+Parameters: K = 1048576, L = 4096
+Using BLAKE2b with 32-byte output
+Table does not exist, generating...
+Thread #0: Generating with parameters: start = 0, end = 131072
+Thread #1: Generating with parameters: start = 131072, end = 262144
+Thread #3: Generating with parameters: start = 393216, end = 524288
+Thread #4: Generating with parameters: start = 524288, end = 655360
+Thread #2: Generating with parameters: start = 262144, end = 393216
+Thread #5: Generating with parameters: start = 655360, end = 786432
+Thread #6: Generating with parameters: start = 786432, end = 917504
+Thread #7: Generating with parameters: start = 917504, end = 1048576
+Thread #7: Generated 13106 chains
+Thread #1: Generated 13106 chains
+Thread #3: Generated 13106 chains
+Thread #4: Generated 13106 chains
+Thread #6: Generated 13106 chains
+Thread #2: Generated 13106 chains
+Thread #5: Generated 13106 chains
+Thread #0: Generated 13106 chains
+Thread #7: Generated 26213 chains
+Thread #1: Generated 26213 chains
+Thread #3: Generated 26213 chains
+Thread #4: Generated 26213 chains
+Thread #6: Generated 26213 chains
+Thread #2: Generated 26213 chains
+Thread #5: Generated 26213 chains
+Thread #0: Generated 26213 chains
+Thread #7: Generated 39320 chains
+Thread #1: Generated 39320 chains
+Thread #3: Generated 39320 chains
+Thread #4: Generated 39320 chains
+Thread #6: Generated 39320 chains
+Thread #2: Generated 39320 chains
+Thread #5: Generated 39320 chains
+Thread #0: Generated 39320 chains
+Thread #7: Generated 52427 chains
+Thread #1: Generated 52427 chains
+Thread #3: Generated 52427 chains
+Thread #4: Generated 52427 chains
+Thread #7: Generated 65534 chains
+Thread #1: Generated 65534 chains
+Thread #3: Generated 65534 chains
+Thread #4: Generated 65534 chains
+Thread #6: Generated 52427 chains
+Thread #2: Generated 52427 chains
+Thread #5: Generated 52427 chains
+Thread #0: Generated 52427 chains
+Thread #7: Generated 78641 chains
+Thread #1: Generated 78641 chains
+Thread #3: Generated 78641 chains
+Thread #4: Generated 78641 chains
+Thread #6: Generated 65534 chains
+Thread #2: Generated 65534 chains
+Thread #5: Generated 65534 chains
+Thread #0: Generated 65534 chains
+Thread #7: Generated 91748 chains
+Thread #1: Generated 91748 chains
+Thread #3: Generated 91748 chains
+Thread #4: Generated 91748 chains
+Thread #2: Generated 78641 chains
+Thread #6: Generated 78641 chains
+Thread #5: Generated 78641 chains
+Thread #0: Generated 78641 chains
+Thread #7: Generated 104855 chains
+Thread #1: Generated 104855 chains
+Thread #3: Generated 104855 chains
+Thread #4: Generated 104855 chains
+Thread #7: Generated 117962 chains
+Thread #1: Generated 117962 chains
+Thread #3: Generated 117962 chains
+Thread #4: Generated 117962 chains
+Thread #6: Generated 91748 chains
+Thread #2: Generated 91748 chains
+Thread #5: Generated 91748 chains
+Thread #0: Generated 91748 chains
+Thread #7: Generated 131069 chains
+Thread #1: Generated 131069 chains
+Thread #3: Generated 131069 chains
+Thread #4: Generated 131069 chains
+Thread #2: Generated 104855 chains
+Thread #5: Generated 104855 chains
+Thread #6: Generated 104855 chains
+Thread #0: Generated 104855 chains
+Thread #2: Generated 117962 chains
+Thread #6: Generated 117962 chains
+Thread #5: Generated 117962 chains
+Thread #0: Generated 117962 chains
+Thread #6: Generated 131069 chains
+Thread #2: Generated 131069 chains
+Thread #5: Generated 131069 chains
+Thread #0: Generated 131069 chains
+Seed: 96b5a4d48818186c7839773f00000000
+./hellman  784.36s user 0.03s system 726% cpu 1:47.93 total
+
+$ time ./hellman
+Hellman's time-memory tradeoff
+Parameters: K = 4194304, L = 1024
+Using BLAKE2b with 32-byte output
+Table does not exist, generating...
+Thread #1: Generating with parameters: start = 524288, end = 1048576
+Thread #2: Generating with parameters: start = 1048576, end = 1572864
+Thread #4: Generating with parameters: start = 2097152, end = 2621440
+Thread #3: Generating with parameters: start = 1572864, end = 2097152
+Thread #0: Generating with parameters: start = 0, end = 524288
+Thread #5: Generating with parameters: start = 2621440, end = 3145728
+Thread #6: Generating with parameters: start = 3145728, end = 3670016
+Thread #7: Generating with parameters: start = 3670016, end = 4194304
+Thread #4: Generated 52427 chains
+Thread #6: Generated 52427 chains
+Thread #5: Generated 52427 chains
+Thread #2: Generated 52427 chains
+Thread #1: Generated 52427 chains
+Thread #7: Generated 52427 chains
+Thread #0: Generated 52427 chains
+Thread #3: Generated 52427 chains
+Thread #4: Generated 104855 chains
+Thread #6: Generated 104855 chains
+Thread #5: Generated 104855 chains
+Thread #2: Generated 104855 chains
+Thread #7: Generated 104855 chains
+Thread #1: Generated 104855 chains
+Thread #0: Generated 104855 chains
+Thread #3: Generated 104855 chains
+Thread #4: Generated 157283 chains
+Thread #5: Generated 157283 chains
+Thread #6: Generated 157283 chains
+Thread #2: Generated 157283 chains
+Thread #7: Generated 157283 chains
+Thread #1: Generated 157283 chains
+Thread #0: Generated 157283 chains
+Thread #3: Generated 157283 chains
+Thread #4: Generated 209711 chains
+Thread #5: Generated 209711 chains
+Thread #6: Generated 209711 chains
+Thread #2: Generated 209711 chains
+Thread #4: Generated 262139 chains
+Thread #5: Generated 262139 chains
+Thread #6: Generated 262139 chains
+Thread #2: Generated 262139 chains
+Thread #7: Generated 209711 chains
+Thread #1: Generated 209711 chains
+Thread #0: Generated 209711 chains
+Thread #3: Generated 209711 chains
+Thread #4: Generated 314567 chains
+Thread #5: Generated 314567 chains
+Thread #6: Generated 314567 chains
+Thread #2: Generated 314567 chains
+Thread #7: Generated 262139 chains
+Thread #1: Generated 262139 chains
+Thread #0: Generated 262139 chains
+Thread #3: Generated 262139 chains
+Thread #4: Generated 366995 chains
+Thread #5: Generated 366995 chains
+Thread #6: Generated 366995 chains
+Thread #2: Generated 366995 chains
+Thread #7: Generated 314567 chains
+Thread #1: Generated 314567 chains
+Thread #0: Generated 314567 chains
+Thread #3: Generated 314567 chains
+Thread #4: Generated 419423 chains
+Thread #5: Generated 419423 chains
+Thread #6: Generated 419423 chains
+Thread #2: Generated 419423 chains
+Thread #5: Generated 471851 chains
+Thread #6: Generated 471851 chains
+Thread #7: Generated 366995 chains
+Thread #0: Generated 366995 chains
+Thread #4: Generated 471851 chains
+Thread #1: Generated 366995 chains
+Thread #3: Generated 366995 chains
+Thread #2: Generated 471851 chains
+Thread #5: Generated 524279 chains
+Thread #6: Generated 524279 chains
+Thread #7: Generated 419423 chains
+Thread #0: Generated 419423 chains
+Thread #4: Generated 524279 chains
+Thread #1: Generated 419423 chains
+Thread #3: Generated 419423 chains
+Thread #2: Generated 524279 chains
+Thread #7: Generated 471851 chains
+Thread #0: Generated 471851 chains
+Thread #1: Generated 471851 chains
+Thread #3: Generated 471851 chains
+Thread #7: Generated 524279 chains
+Thread #0: Generated 524279 chains
+Thread #3: Generated 524279 chains
+Thread #1: Generated 524279 chains
+Seed: e5af8c37608d6c705ce2578a00000000
+./hellman  858.09s user 0.13s system 730% cpu 1:57.51 total
+
+
+$ time ./hellman
+Hellman's time-memory tradeoff
+Parameters: K = 4194304, L = 2048
+Using BLAKE2b with 32-byte output
+Table does not exist, generating...
+Thread #0: Generating with parameters: start = 0, end = 524288
+Thread #1: Generating with parameters: start = 524288, end = 1048576
+Thread #2: Generating with parameters: start = 1048576, end = 1572864
+Thread #3: Generating with parameters: start = 1572864, end = 2097152
+Thread #4: Generating with parameters: start = 2097152, end = 2621440
+Thread #5: Generating with parameters: start = 2621440, end = 3145728
+Thread #6: Generating with parameters: start = 3145728, end = 3670016
+Thread #7: Generating with parameters: start = 3670016, end = 4194304
+Thread #4: Generated 52427 chains
+Thread #2: Generated 52427 chains
+Thread #6: Generated 52427 chains
+Thread #3: Generated 52427 chains
+Thread #0: Generated 52427 chains
+Thread #1: Generated 52427 chains
+Thread #5: Generated 52427 chains
+Thread #7: Generated 52427 chains
+Thread #2: Generated 104855 chains
+Thread #4: Generated 104855 chains
+Thread #3: Generated 104855 chains
+Thread #6: Generated 104855 chains
+Thread #1: Generated 104855 chains
+Thread #0: Generated 104855 chains
+Thread #5: Generated 104855 chains
+Thread #7: Generated 104855 chains
+Thread #4: Generated 157283 chains
+Thread #3: Generated 157283 chains
+Thread #2: Generated 157283 chains
+Thread #6: Generated 157283 chains
+Thread #1: Generated 157283 chains
+Thread #0: Generated 157283 chains
+Thread #5: Generated 157283 chains
+Thread #7: Generated 157283 chains
+Thread #3: Generated 209711 chains
+Thread #2: Generated 209711 chains
+Thread #4: Generated 209711 chains
+Thread #6: Generated 209711 chains
+Thread #3: Generated 262139 chains
+Thread #2: Generated 262139 chains
+Thread #4: Generated 262139 chains
+Thread #6: Generated 262139 chains
+Thread #1: Generated 209711 chains
+Thread #0: Generated 209711 chains
+Thread #5: Generated 209711 chains
+Thread #7: Generated 209711 chains
+Thread #3: Generated 314567 chains
+Thread #2: Generated 314567 chains
+Thread #6: Generated 314567 chains
+Thread #4: Generated 314567 chains
+Thread #1: Generated 262139 chains
+Thread #0: Generated 262139 chains
+Thread #5: Generated 262139 chains
+Thread #7: Generated 262139 chains
+Thread #3: Generated 366995 chains
+Thread #2: Generated 366995 chains
+Thread #6: Generated 366995 chains
+Thread #4: Generated 366995 chains
+Thread #1: Generated 314567 chains
+Thread #0: Generated 314567 chains
+Thread #5: Generated 314567 chains
+Thread #7: Generated 314567 chains
+Thread #3: Generated 419423 chains
+Thread #2: Generated 419423 chains
+Thread #6: Generated 419423 chains
+Thread #4: Generated 419423 chains
+Thread #3: Generated 471851 chains
+Thread #6: Generated 471851 chains
+Thread #2: Generated 471851 chains
+Thread #4: Generated 471851 chains
+Thread #1: Generated 366995 chains
+Thread #0: Generated 366995 chains
+Thread #5: Generated 366995 chains
+Thread #7: Generated 366995 chains
+Thread #3: Generated 524279 chains
+Thread #2: Generated 524279 chains
+Thread #6: Generated 524279 chains
+Thread #4: Generated 524279 chains
+Thread #0: Generated 419423 chains
+Thread #1: Generated 419423 chains
+Thread #5: Generated 419423 chains
+Thread #7: Generated 419423 chains
+Thread #0: Generated 471851 chains
+Thread #5: Generated 471851 chains
+Thread #1: Generated 471851 chains
+Thread #7: Generated 471851 chains
+Thread #0: Generated 524279 chains
+Thread #5: Generated 524279 chains
+Thread #1: Generated 524279 chains
+Thread #7: Generated 524279 chains
+Seed: 98dc332df64f2a0c66cf1c6f00000000
+./hellman  1690.67s user 0.18s system 731% cpu 3:51.25 total
+
+
+time ./hellman
+Hellman's time-memory tradeoff
+Parameters: K = 4194304, L = 4096
+Using BLAKE2b with 32-byte output
+Table does not exist, generating...
+Thread #0: Generating with parameters: start = 0, end = 524288
+Thread #1: Generating with parameters: start = 524288, end = 1048576
+Thread #2: Generating with parameters: start = 1048576, end = 1572864
+Thread #3: Generating with parameters: start = 1572864, end = 2097152
+Thread #4: Generating with parameters: start = 2097152, end = 2621440
+Thread #5: Generating with parameters: start = 2621440, end = 3145728
+Thread #6: Generating with parameters: start = 3145728, end = 3670016
+Thread #7: Generating with parameters: start = 3670016, end = 4194304
+Thread #5: Generated 52427 chains
+Thread #2: Generated 52427 chains
+Thread #4: Generated 52427 chains
+Thread #3: Generated 52427 chains
+Thread #1: Generated 52427 chains
+Thread #0: Generated 52427 chains
+Thread #6: Generated 52427 chains
+Thread #7: Generated 52427 chains
+Thread #5: Generated 104855 chains
+Thread #2: Generated 104855 chains
+Thread #4: Generated 104855 chains
+Thread #3: Generated 104855 chains
+Thread #1: Generated 104855 chains
+Thread #0: Generated 104855 chains
+Thread #6: Generated 104855 chains
+Thread #7: Generated 104855 chains
+Thread #5: Generated 157283 chains
+Thread #2: Generated 157283 chains
+Thread #3: Generated 157283 chains
+Thread #4: Generated 157283 chains
+Thread #1: Generated 157283 chains
+Thread #0: Generated 157283 chains
+Thread #6: Generated 157283 chains
+Thread #7: Generated 157283 chains
+Thread #5: Generated 209711 chains
+Thread #2: Generated 209711 chains
+Thread #3: Generated 209711 chains
+Thread #4: Generated 209711 chains
+Thread #1: Generated 209711 chains
+Thread #2: Generated 262139 chains
+Thread #5: Generated 262139 chains
+Thread #4: Generated 262139 chains
+Thread #0: Generated 209711 chains
+Thread #6: Generated 209711 chains
+Thread #7: Generated 209711 chains
+Thread #3: Generated 262139 chains
+Thread #1: Generated 262139 chains
+Thread #2: Generated 314567 chains
+Thread #4: Generated 314567 chains
+Thread #5: Generated 314567 chains
+Thread #3: Generated 314567 chains
+Thread #7: Generated 262139 chains
+Thread #0: Generated 262139 chains
+Thread #6: Generated 262139 chains
+Thread #1: Generated 314567 chains
+Thread #2: Generated 366995 chains
+Thread #4: Generated 366995 chains
+Thread #5: Generated 366995 chains
+Thread #3: Generated 366995 chains
+Thread #7: Generated 314567 chains
+Thread #0: Generated 314567 chains
+Thread #6: Generated 314567 chains
+Thread #1: Generated 366995 chains
+Thread #2: Generated 419423 chains
+Thread #4: Generated 419423 chains
+Thread #5: Generated 419423 chains
+Thread #3: Generated 419423 chains
+Thread #1: Generated 419423 chains
+Thread #2: Generated 471851 chains
+Thread #4: Generated 471851 chains
+Thread #7: Generated 366995 chains
+Thread #0: Generated 366995 chains
+Thread #6: Generated 366995 chains
+Thread #5: Generated 471851 chains
+Thread #1: Generated 471851 chains
+Thread #2: Generated 524279 chains
+Thread #4: Generated 524279 chains
+Thread #3: Generated 471851 chains
+Thread #7: Generated 419423 chains
+Thread #6: Generated 419423 chains
+Thread #0: Generated 419423 chains
+Thread #5: Generated 524279 chains
+Thread #1: Generated 524279 chains
+Thread #3: Generated 524279 chains
+Thread #7: Generated 471851 chains
+Thread #6: Generated 471851 chains
+Thread #0: Generated 471851 chains
+Thread #7: Generated 524279 chains
+Thread #6: Generated 524279 chains
+Thread #0: Generated 524279 chains
+Seed: 07a759aaa0889120be903f5c00000000
+./hellman  3136.09s user 0.19s system 726% cpu 7:11.87 total
+
+$ time ./hellman
+Hellman's time-memory tradeoff
+Parameters: K = 16777216, L = 1024
+Using BLAKE2b with 32-byte output
+Table does not exist, generating...
+Thread #0: Generating with parameters: start = 0, end = 2097152
+Thread #1: Generating with parameters: start = 2097152, end = 4194304
+Thread #2: Generating with parameters: start = 4194304, end = 6291456
+Thread #4: Generating with parameters: start = 8388608, end = 10485760
+Thread #3: Generating with parameters: start = 6291456, end = 8388608
+Thread #5: Generating with parameters: start = 10485760, end = 12582912
+Thread #6: Generating with parameters: start = 12582912, end = 14680064
+Thread #7: Generating with parameters: start = 14680064, end = 16777216
+Thread #1: Generated 209714 chains
+Thread #3: Generated 209714 chains
+Thread #6: Generated 209714 chains
+Thread #4: Generated 209714 chains
+Thread #5: Generated 209714 chains
+Thread #2: Generated 209714 chains
+Thread #0: Generated 209714 chains
+Thread #7: Generated 209714 chains
+Thread #1: Generated 419429 chains
+Thread #6: Generated 419429 chains
+Thread #4: Generated 419429 chains
+Thread #3: Generated 419429 chains
+Thread #5: Generated 419429 chains
+Thread #2: Generated 419429 chains
+Thread #0: Generated 419429 chains
+Thread #7: Generated 419429 chains
+Thread #1: Generated 629144 chains
+Thread #6: Generated 629144 chains
+Thread #4: Generated 629144 chains
+Thread #3: Generated 629144 chains
+Thread #5: Generated 629144 chains
+Thread #2: Generated 629144 chains
+Thread #0: Generated 629144 chains
+Thread #7: Generated 629144 chains
+Thread #1: Generated 838859 chains
+Thread #6: Generated 838859 chains
+Thread #4: Generated 838859 chains
+Thread #3: Generated 838859 chains
+Thread #5: Generated 838859 chains
+Thread #1: Generated 1048574 chains
+Thread #6: Generated 1048574 chains
+Thread #4: Generated 1048574 chains
+Thread #2: Generated 838859 chains
+Thread #0: Generated 838859 chains
+Thread #7: Generated 838859 chains
+Thread #3: Generated 1048574 chains
+Thread #5: Generated 1048574 chains
+Thread #1: Generated 1258289 chains
+Thread #6: Generated 1258289 chains
+Thread #4: Generated 1258289 chains
+Thread #2: Generated 1048574 chains
+Thread #0: Generated 1048574 chains
+Thread #7: Generated 1048574 chains
+Thread #3: Generated 1258289 chains
+Thread #5: Generated 1258289 chains
+Thread #6: Generated 1468004 chains
+Thread #1: Generated 1468004 chains
+Thread #4: Generated 1468004 chains
+Thread #7: Generated 1258289 chains
+Thread #0: Generated 1258289 chains
+Thread #2: Generated 1258289 chains
+Thread #3: Generated 1468004 chains
+Thread #5: Generated 1468004 chains
+Thread #6: Generated 1677719 chains
+Thread #1: Generated 1677719 chains
+Thread #4: Generated 1677719 chains
+Thread #5: Generated 1677719 chains
+Thread #6: Generated 1887434 chains
+Thread #1: Generated 1887434 chains
+Thread #4: Generated 1887434 chains
+Thread #7: Generated 1468004 chains
+Thread #0: Generated 1468004 chains
+Thread #2: Generated 1468004 chains
+Thread #3: Generated 1677719 chains
+Thread #5: Generated 1887434 chains
+Thread #6: Generated 2097149 chains
+Thread #1: Generated 2097149 chains
+Thread #4: Generated 2097149 chains
+Thread #7: Generated 1677719 chains
+Thread #0: Generated 1677719 chains
+Thread #2: Generated 1677719 chains
+Thread #3: Generated 1887434 chains
+Thread #5: Generated 2097149 chains
+Thread #7: Generated 1887434 chains
+Thread #0: Generated 1887434 chains
+Thread #2: Generated 1887434 chains
+Thread #3: Generated 2097149 chains
+Thread #7: Generated 2097149 chains
+Thread #0: Generated 2097149 chains
+Thread #2: Generated 2097149 chains
+Seed: 7242d1e58a7f840119ccf3f700000000
+Preimage found: 5a227a64f7f3cc1901847f8ae5d14272
+./hellman  3127.41s user 0.69s system 725% cpu 7:11.45 total
+
+
+
+$ time ./hellman
+Hellman's time-memory tradeoff
+Parameters: K = 16777216, L = 2048
+Using BLAKE2b with 32-byte output
+Table does not exist, generating...
+Thread #0: Generating with parameters: start = 0, end = 2097152
+Thread #1: Generating with parameters: start = 2097152, end = 4194304
+Thread #2: Generating with parameters: start = 4194304, end = 6291456
+Thread #3: Generating with parameters: start = 6291456, end = 8388608
+Thread #4: Generating with parameters: start = 8388608, end = 10485760
+Thread #5: Generating with parameters: start = 10485760, end = 12582912
+Thread #6: Generating with parameters: start = 12582912, end = 14680064
+Thread #7: Generating with parameters: start = 14680064, end = 16777216
+Thread #1: Generated 209714 chains
+Thread #3: Generated 209714 chains
+Thread #4: Generated 209714 chains
+Thread #0: Generated 209714 chains
+Thread #2: Generated 209714 chains
+Thread #7: Generated 209714 chains
+Thread #6: Generated 209714 chains
+Thread #5: Generated 209714 chains
+Thread #1: Generated 419429 chains
+Thread #3: Generated 419429 chains
+Thread #4: Generated 419429 chains
+Thread #0: Generated 419429 chains
+Thread #7: Generated 419429 chains
+Thread #6: Generated 419429 chains
+Thread #2: Generated 419429 chains
+Thread #5: Generated 419429 chains
+Thread #1: Generated 629144 chains
+Thread #3: Generated 629144 chains
+Thread #4: Generated 629144 chains
+Thread #0: Generated 629144 chains
+Thread #7: Generated 629144 chains
+Thread #6: Generated 629144 chains
+Thread #2: Generated 629144 chains
+Thread #5: Generated 629144 chains
+Thread #1: Generated 838859 chains
+Thread #3: Generated 838859 chains
+Thread #4: Generated 838859 chains
+Thread #0: Generated 838859 chains
+Thread #5: Generated 838859 chains
+Thread #2: Generated 838859 chains
+Thread #4: Generated 1048574 chains
+Thread #0: Generated 1048574 chains
+Thread #7: Generated 838859 chains
+Thread #6: Generated 838859 chains
+Thread #1: Generated 1048574 chains
+Thread #3: Generated 1048574 chains
+Thread #5: Generated 1048574 chains
+Thread #2: Generated 1048574 chains
+Thread #0: Generated 1258289 chains
+Thread #4: Generated 1258289 chains
+Thread #7: Generated 1048574 chains
+Thread #6: Generated 1048574 chains
+Thread #1: Generated 1258289 chains
+Thread #3: Generated 1258289 chains
+Thread #5: Generated 1258289 chains
+Thread #2: Generated 1258289 chains
+Thread #0: Generated 1468004 chains
+Thread #7: Generated 1258289 chains
+Thread #4: Generated 1468004 chains
+Thread #6: Generated 1258289 chains
+Thread #1: Generated 1468004 chains
+Thread #3: Generated 1468004 chains
+Thread #2: Generated 1468004 chains
+Thread #5: Generated 1468004 chains
+Thread #0: Generated 1677719 chains
+Thread #7: Generated 1468004 chains
+Thread #4: Generated 1677719 chains
+Thread #2: Generated 1677719 chains
+Thread #5: Generated 1677719 chains
+Thread #0: Generated 1887434 chains
+Thread #6: Generated 1468004 chains
+Thread #1: Generated 1677719 chains
+Thread #3: Generated 1677719 chains
+Thread #7: Generated 1677719 chains
+Thread #2: Generated 1887434 chains
+Thread #5: Generated 1887434 chains
+Thread #0: Generated 2097149 chains
+Thread #4: Generated 1887434 chains
+Thread #7: Generated 1887434 chains
+Thread #6: Generated 1677719 chains
+Thread #1: Generated 1887434 chains
+Thread #3: Generated 1887434 chains
+Thread #2: Generated 2097149 chains
+Thread #5: Generated 2097149 chains
+Thread #4: Generated 2097149 chains
+Thread #7: Generated 2097149 chains
+Thread #6: Generated 1887434 chains
+Thread #1: Generated 2097149 chains
+Thread #3: Generated 2097149 chains
+Thread #6: Generated 2097149 chains
+Seed: 30893257e1a3a9f8248786e800000000
+./hellman  6538.26s user 0.63s system 731% cpu 14:53.67 total
+
+Hellman's time-memory tradeoff
+Parameters: K = 16777216, L = 4096
+Using BLAKE2b with 32-byte output
+Table does not exist, generating...
+Thread #0: Generating with parameters: start = 0, end = 2097152
+Thread #1: Generating with parameters: start = 2097152, end = 4194304
+Thread #2: Generating with parameters: start = 4194304, end = 6291456
+Thread #3: Generating with parameters: start = 6291456, end = 8388608
+Thread #4: Generating with parameters: start = 8388608, end = 10485760
+Thread #5: Generating with parameters: start = 10485760, end = 12582912
+Thread #6: Generating with parameters: start = 12582912, end = 14680064
+Thread #7: Generating with parameters: start = 14680064, end = 16777216
+Thread #4: Generated 209714 chains
+Thread #6: Generated 209714 chains
+Thread #0: Generated 209714 chains
+Thread #5: Generated 209714 chains
+Thread #3: Generated 209714 chains
+Thread #2: Generated 209714 chains
+Thread #7: Generated 209714 chains
+Thread #1: Generated 209714 chains
+Thread #4: Generated 419429 chains
+Thread #6: Generated 419429 chains
+Thread #0: Generated 419429 chains
+Thread #5: Generated 419429 chains
+Thread #3: Generated 419429 chains
+Thread #2: Generated 419429 chains
+Thread #7: Generated 419429 chains
+Thread #1: Generated 419429 chains
+Thread #4: Generated 629144 chains
+Thread #6: Generated 629144 chains
+Thread #0: Generated 629144 chains
+Thread #5: Generated 629144 chains
+Thread #1: Generated 629144 chains
+Thread #3: Generated 629144 chains
+Thread #2: Generated 629144 chains
+Thread #7: Generated 629144 chains
+Thread #4: Generated 838859 chains
+Thread #6: Generated 838859 chains
+Thread #5: Generated 838859 chains
+Thread #0: Generated 838859 chains
+Thread #1: Generated 838859 chains
+Thread #3: Generated 838859 chains
+Thread #2: Generated 838859 chains
+Thread #6: Generated 1048574 chains
+Thread #5: Generated 1048574 chains
+Thread #4: Generated 1048574 chains
+Thread #7: Generated 838859 chains
+Thread #0: Generated 1048574 chains
+Thread #1: Generated 1048574 chains
+Thread #3: Generated 1048574 chains
+Thread #6: Generated 1258289 chains
+Thread #5: Generated 1258289 chains
+Thread #2: Generated 1048574 chains
+Thread #4: Generated 1258289 chains
+Thread #7: Generated 1048574 chains
+Thread #1: Generated 1258289 chains
+Thread #0: Generated 1258289 chains
+Thread #3: Generated 1258289 chains
+Thread #6: Generated 1468004 chains
+Thread #5: Generated 1468004 chains
+Thread #2: Generated 1258289 chains
+Thread #4: Generated 1468004 chains
+Thread #7: Generated 1258289 chains
+Thread #1: Generated 1468004 chains
+Thread #3: Generated 1468004 chains
+Thread #6: Generated 1677719 chains
+Thread #5: Generated 1677719 chains
+Thread #0: Generated 1468004 chains
+Thread #1: Generated 1677719 chains
+Thread #2: Generated 1468004 chains
+Thread #3: Generated 1677719 chains
+Thread #4: Generated 1677719 chains
+Thread #7: Generated 1468004 chains
+Thread #6: Generated 1887434 chains
+Thread #5: Generated 1887434 chains
+Thread #0: Generated 1677719 chains
+Thread #1: Generated 1887434 chains
+Thread #3: Generated 1887434 chains
+Thread #6: Generated 2097149 chains
+Thread #5: Generated 2097149 chains
+Thread #7: Generated 1677719 chains
+Thread #2: Generated 1677719 chains
+Thread #4: Generated 1887434 chains
+Thread #0: Generated 1887434 chains
+Thread #1: Generated 2097149 chains
+Thread #3: Generated 2097149 chains
+Thread #7: Generated 1887434 chains
+Thread #2: Generated 1887434 chains
+Thread #4: Generated 2097149 chains
+Thread #0: Generated 2097149 chains
+Thread #7: Generated 2097149 chains
+Thread #2: Generated 2097149 chains
+Seed: 3a86984c8603f0e8935c650f00000000
+./hellman  13272.44s user 0.55s system 736% cpu 30:02.07 total
