@@ -1,0 +1,1613 @@
+time ./hellman
+Hellman's time-memory tradeoff
+Parameters: K = 1048576, L = 1024
+Using BLAKE2b with 32-byte output
+Table saved to task2_tables/e1fc1011b145af48fc17074300000000_20x10.table
+Table saved to task2_tables/3d79a38d1444db1aba8c552600000000_20x10.table
+Table saved to task2_tables/c05ce5559b80073efc396e4500000000_20x10.table
+Table saved to task2_tables/7f8437d6db7373d52b45083800000000_20x10.table
+Table saved to task2_tables/2713a5977d69d38c71eac01500000000_20x10.table
+Table saved to task2_tables/d5299191e53c87dcd9b901c900000000_20x10.table
+Table saved to task2_tables/be2f02f4a4a8a6732fd6017600000000_20x10.table
+Table saved to task2_tables/81bf4de786a5250098772e5000000000_20x10.table
+Table saved to task2_tables/9f15c83ffe737e89c7270c7b00000000_20x10.table
+Table saved to task2_tables/bfa768c6a9107c9f15f9b1be00000000_20x10.table
+Table saved to task2_tables/6c207a3cc35ed4e25b8edd9300000000_20x10.table
+Table saved to task2_tables/05c07843585fb772c06a8e2400000000_20x10.table
+Table saved to task2_tables/e1a7229d1d9f8b311a9b7ddc00000000_20x10.table
+Table saved to task2_tables/a9447cde043464e3ccb3fbee00000000_20x10.table
+Table saved to task2_tables/75613fa82b805c4d11fc3c7400000000_20x10.table
+Table saved to task2_tables/be5461f0e2a0a950039f1e1d00000000_20x10.table
+Table saved to task2_tables/1ea60a73a09660636b81488800000000_20x10.table
+Table saved to task2_tables/36f8853c6f43d1caf75e700800000000_20x10.table
+Table saved to task2_tables/b828d3dad200720d1b034dea00000000_20x10.table
+Table saved to task2_tables/56153112bb9c2bf198e14ae200000000_20x10.table
+Table saved to task2_tables/31a51ccf11b00cc0cb63a6a900000000_20x10.table
+Table saved to task2_tables/1bf0de51911c24d2d7cc0aaf00000000_20x10.table
+Table saved to task2_tables/ac2a6bbd56da42c08c53b13f00000000_20x10.table
+Table saved to task2_tables/982f6aa8ec6844ceaaac6b3d00000000_20x10.table
+Table saved to task2_tables/c580fb7c11196fc01e1d65a800000000_20x10.table
+Table saved to task2_tables/8c0d66921271b657da957ffa00000000_20x10.table
+Table saved to task2_tables/45e601d9ca743afa8579e86000000000_20x10.table
+Table saved to task2_tables/4f00d24afe8c93b89228b09c00000000_20x10.table
+Table saved to task2_tables/5b9ecb47584ca66c1b8be72b00000000_20x10.table
+Table saved to task2_tables/14046d5507eb563be721d3c900000000_20x10.table
+Table saved to task2_tables/33e665986681817250bc08a700000000_20x10.table
+Table saved to task2_tables/81091cd7b009fdad8f813f0500000000_20x10.table
+Table saved to task2_tables/a710d78bb964a51147eae38400000000_20x10.table
+Table saved to task2_tables/bd5321041582b68a0c111c3800000000_20x10.table
+Table saved to task2_tables/2c151d8e852c2613d55dfdb600000000_20x10.table
+Table saved to task2_tables/077d35b03954be558244fca800000000_20x10.table
+Table saved to task2_tables/6f6f4b9d229698703e781cfe00000000_20x10.table
+Table saved to task2_tables/d619f41cb4db41f2bf27805600000000_20x10.table
+Table saved to task2_tables/885e0c6d7ab35ad568ab6bcc00000000_20x10.table
+Table saved to task2_tables/eca6a6e9a8342ae647c62a6e00000000_20x10.table
+Table saved to task2_tables/50a6995e295ad73d6eb82a8900000000_20x10.table
+Table saved to task2_tables/bf43c3701b9c07fa1f35a24700000000_20x10.table
+Table saved to task2_tables/0fe5db6f6b22730061337fbd00000000_20x10.table
+Table saved to task2_tables/9b8b4c4d4873c1a970768d8700000000_20x10.table
+Table saved to task2_tables/8856e56296183fe1b790103300000000_20x10.table
+Table saved to task2_tables/b555b0613b34393972cc207f00000000_20x10.table
+Table saved to task2_tables/f7eaefe6b45c7dec67a6c85500000000_20x10.table
+Table saved to task2_tables/45d917a1de2671a31aa2171b00000000_20x10.table
+Table saved to task2_tables/f2049992eb5cf94c0f6e072e00000000_20x10.table
+Table saved to task2_tables/f1e779aadcf0261619aefb7800000000_20x10.table
+Table saved to task2_tables/36c39535b8d9eca97a1dcd9b00000000_20x10.table
+Table saved to task2_tables/630555a3eefc0b781730498600000000_20x10.table
+Table saved to task2_tables/523bab1c18cf5250a4b6674d00000000_20x10.table
+Table saved to task2_tables/ef1655eb70dfe9fd0ccecd5a00000000_20x10.table
+Table saved to task2_tables/5cad48bf3272546046a1b51500000000_20x10.table
+Table saved to task2_tables/b690ce623d043fcb236d0e3700000000_20x10.table
+Table saved to task2_tables/56bf15ef96b4cd7290fbdf5200000000_20x10.table
+Table saved to task2_tables/c757e746a059a58bbe166a5600000000_20x10.table
+Table saved to task2_tables/4436bcf538f007d01c971c7100000000_20x10.table
+Table saved to task2_tables/4c4931449c24435f1b4176b100000000_20x10.table
+Table saved to task2_tables/6956da2a75c17909c816ebdc00000000_20x10.table
+Table saved to task2_tables/6b5b419d6ccf6929792cefc600000000_20x10.table
+Table saved to task2_tables/ef17162f8dbce6aa50e054dc00000000_20x10.table
+Table saved to task2_tables/a1ae926b88618eb9bd55a81e00000000_20x10.table
+Table saved to task2_tables/59405b2d5af7d087167dccaf00000000_20x10.table
+Table saved to task2_tables/b5c99b24221cebb5d81ffe7000000000_20x10.table
+Table saved to task2_tables/fd4e1babeb4d0810083f195600000000_20x10.table
+Table saved to task2_tables/ad5382f9a74ed4882b97d3e200000000_20x10.table
+Table saved to task2_tables/e1d424f1833f065c498dfdff00000000_20x10.table
+Table saved to task2_tables/624316bf20a3f8b06b32d0c400000000_20x10.table
+Table saved to task2_tables/b9ccb5b55e4b04894b172c6400000000_20x10.table
+Table saved to task2_tables/f5e14dd30f39b2f15baf258500000000_20x10.table
+Table saved to task2_tables/b8f040571d6e73f4caed7be300000000_20x10.table
+Table saved to task2_tables/fa6817eea5b720b029e8dae300000000_20x10.table
+Table saved to task2_tables/3f33d788f8e21b3bd5d0f59900000000_20x10.table
+Table saved to task2_tables/18dfcd83ea9f2892b49916db00000000_20x10.table
+Table saved to task2_tables/0cab8885010a9be2d06ba0bd00000000_20x10.table
+Table saved to task2_tables/db87e30bda8c79d7f24987e000000000_20x10.table
+Table saved to task2_tables/9c487038113282a7f52a46c200000000_20x10.table
+Table saved to task2_tables/0dd1088980d56cb94caae39500000000_20x10.table
+Table saved to task2_tables/b64e9728913cfa36036b862600000000_20x10.table
+Table saved to task2_tables/ceae4425ca32f53986db953b00000000_20x10.table
+Table saved to task2_tables/cdf4e743759cc7aa7cf842ff00000000_20x10.table
+Table saved to task2_tables/1c06ed26899ba2393b25aacb00000000_20x10.table
+Table saved to task2_tables/7bfc4fa1a2740d0c4eedb01e00000000_20x10.table
+Table saved to task2_tables/6d9453e3e424572cbac7821a00000000_20x10.table
+Table saved to task2_tables/531a69c65b3b97ba3122cdee00000000_20x10.table
+Table saved to task2_tables/d2d483bce0e573da405e370900000000_20x10.table
+Table saved to task2_tables/ed8c83c48dea0018b2c084ff00000000_20x10.table
+Table saved to task2_tables/d6c9213adb912843a927329100000000_20x10.table
+Table saved to task2_tables/c4daaf598b896e49fbf625f700000000_20x10.table
+Table saved to task2_tables/63d428cb5cd3fc9c5d77089300000000_20x10.table
+Table saved to task2_tables/4e59e5fb84558594a1454fd800000000_20x10.table
+Table saved to task2_tables/feadf2b56909421214dfdf1e00000000_20x10.table
+Table saved to task2_tables/8a6231dfe9521948fd4d7a8100000000_20x10.table
+Table saved to task2_tables/f10dae1f43ede9e2d2dda2e700000000_20x10.table
+Table saved to task2_tables/8c5079f336f3514b082f80c200000000_20x10.table
+Table saved to task2_tables/d65390cc8c94c9aedef6ba7100000000_20x10.table
+Table saved to task2_tables/c87b7749244117acec40584c00000000_20x10.table
+Table saved to task2_tables/8889050981ed90567d74b8e000000000_20x10.table
+Table saved to task2_tables/88e0b0b3897ebba573cc61a200000000_20x10.table
+Table saved to task2_tables/755d52be7e0d026e447b8b8e00000000_20x10.table
+Table saved to task2_tables/fd046addd6ade3e47d66886200000000_20x10.table
+Table saved to task2_tables/c8b5179263601ea7ad7c732000000000_20x10.table
+Table saved to task2_tables/0559f67a4f959e0b39f5606300000000_20x10.table
+Table saved to task2_tables/7fb334ea480ab1395a30b24800000000_20x10.table
+Table saved to task2_tables/72218793a7b9f6a3c87dbdf700000000_20x10.table
+Table saved to task2_tables/f653881c0c35cc9e3ead7efa00000000_20x10.table
+Table saved to task2_tables/8169286927838a8af133068300000000_20x10.table
+Table saved to task2_tables/06de84a914df2c1e13bcbbd500000000_20x10.table
+Table saved to task2_tables/ec8716a2cecbd91a6f19806f00000000_20x10.table
+Table saved to task2_tables/36ca02c711712b733d11d75600000000_20x10.table
+Table saved to task2_tables/0b564d43fedd2c14d8a4028700000000_20x10.table
+Table saved to task2_tables/204547c3b74b6b81b30e8e9c00000000_20x10.table
+Table saved to task2_tables/ab1cb937eb2b43201f0f5fbf00000000_20x10.table
+Table saved to task2_tables/412ddf2416417745376faa0800000000_20x10.table
+Table saved to task2_tables/978a3e5902cfb8b3ba5b319000000000_20x10.table
+Table saved to task2_tables/7a8339feb1c05d502017323000000000_20x10.table
+Table saved to task2_tables/7fa36ae231273f3f6446024600000000_20x10.table
+Table saved to task2_tables/64bbdbd961c12fca2a86fc8a00000000_20x10.table
+Table saved to task2_tables/02f3040a5db8bcdc2a1a36e400000000_20x10.table
+Table saved to task2_tables/54dff6dab3a04551fb6d76d100000000_20x10.table
+Table saved to task2_tables/f2d775c726329b071dc9416500000000_20x10.table
+Table saved to task2_tables/6959c9c13c4d29ef40c4fbea00000000_20x10.table
+Table saved to task2_tables/2115934074fc84a66d9b66b800000000_20x10.table
+Table saved to task2_tables/e2d36dc242f41ece3f18922600000000_20x10.table
+Table saved to task2_tables/e4757001c1066a0cccf155a400000000_20x10.table
+Table saved to task2_tables/4e81cf2d1aaa57ecf360ad4900000000_20x10.table
+Table saved to task2_tables/734f1caaf9a2b48ee02c112600000000_20x10.table
+Table saved to task2_tables/e7cd801b4a686a0f60dfd97700000000_20x10.table
+Table saved to task2_tables/36a3c35ffa51a7c734b9fb5000000000_20x10.table
+Table saved to task2_tables/0fddb12d1f87dc8b2e7c5f1500000000_20x10.table
+Table saved to task2_tables/531d9336a9403662b632b37400000000_20x10.table
+Table saved to task2_tables/f7941a3ff9b3f774f77d6e6b00000000_20x10.table
+Table saved to task2_tables/c8d403617b7321c12afe00a400000000_20x10.table
+Table saved to task2_tables/0818f7f7ded346adb8453f5600000000_20x10.table
+Table saved to task2_tables/834e799a36a0fbd6c3a2cb3500000000_20x10.table
+Table saved to task2_tables/085cb48e0856c95ffc1afc0a00000000_20x10.table
+Table saved to task2_tables/0b7804cf848c755e4e91c74600000000_20x10.table
+Table saved to task2_tables/7cdc80b12e63e45280a0b7be00000000_20x10.table
+Table saved to task2_tables/25cbf982cf4d256843104ec000000000_20x10.table
+Table saved to task2_tables/59c4d926f5d0f8465fe92c6d00000000_20x10.table
+Table saved to task2_tables/3cb760f55a0e7a74ac96a24f00000000_20x10.table
+Table saved to task2_tables/c906121b6856b8d4a8971c3a00000000_20x10.table
+Table saved to task2_tables/1a2b16da7a484d789b86a3a000000000_20x10.table
+Table saved to task2_tables/c0587c3774612b8103d5f6d000000000_20x10.table
+Table saved to task2_tables/0bfb72d05fde0d556ce775ec00000000_20x10.table
+Table saved to task2_tables/1e565683f43c44c08975df9100000000_20x10.table
+Table saved to task2_tables/e5f6363b0da74ac94c5bd91800000000_20x10.table
+Table saved to task2_tables/75cd60bb8ee6f8245b5945a500000000_20x10.table
+Table saved to task2_tables/a27884fab77ca59c2c8827e000000000_20x10.table
+Table saved to task2_tables/1f4ea9ded4e2e7d5e06e451000000000_20x10.table
+Table saved to task2_tables/717d6e85b854687064454b7100000000_20x10.table
+Table saved to task2_tables/0d6da702ac71c0e6fb975da600000000_20x10.table
+Table saved to task2_tables/4f222b40cf3c67c7cfb05d3600000000_20x10.table
+Table saved to task2_tables/a858c837c19b4e5a1438205d00000000_20x10.table
+Table saved to task2_tables/e79fde14d3ea62fba6f5256b00000000_20x10.table
+Table saved to task2_tables/f7c2801334a84ea982e014d100000000_20x10.table
+Table saved to task2_tables/95f539f4e760a5196f0383e300000000_20x10.table
+Table saved to task2_tables/db6a68cb1128db88c2ed1fee00000000_20x10.table
+Table saved to task2_tables/f55885b56d4c0bc6055499c200000000_20x10.table
+Table saved to task2_tables/dbb5b021dc1d8d0b3446442400000000_20x10.table
+Table saved to task2_tables/d509d05dd5e4175493fdaaaf00000000_20x10.table
+Table saved to task2_tables/15e38bcf57186591cf79542c00000000_20x10.table
+Table saved to task2_tables/f0dfff52eaf7ecddf19e903000000000_20x10.table
+Table saved to task2_tables/5f1f7cc263dca24b3e636fd200000000_20x10.table
+Table saved to task2_tables/25245428db404f38498e021400000000_20x10.table
+Table saved to task2_tables/f89cfda711f303a7804ba34500000000_20x10.table
+Table saved to task2_tables/980ca8b516ea45b4b1c7c5c000000000_20x10.table
+Table saved to task2_tables/77f066afc62bd2a6a50953f400000000_20x10.table
+Table saved to task2_tables/a11a3fc51faf1795e51c121300000000_20x10.table
+Table saved to task2_tables/f64953454d2dc9d70db114ff00000000_20x10.table
+Table saved to task2_tables/2a668a1fc6134e608edc859700000000_20x10.table
+Table saved to task2_tables/154ca2b59719e90c8c8c43ec00000000_20x10.table
+Table saved to task2_tables/a9aee760edf51dd0013025a900000000_20x10.table
+Table saved to task2_tables/3fa9624ad701daeee13c206a00000000_20x10.table
+Table saved to task2_tables/eca11c3258d26c2bb244bdf300000000_20x10.table
+Table saved to task2_tables/77c44c24521a227f13e4bb1300000000_20x10.table
+Table saved to task2_tables/c8e335ed63bcebf983a949e900000000_20x10.table
+Table saved to task2_tables/32d35dd0fe0ddb776e30bbe500000000_20x10.table
+Table saved to task2_tables/dcb2381ea2324ce0238a19fd00000000_20x10.table
+Table saved to task2_tables/46f88e3335bff7e047a705f700000000_20x10.table
+Table saved to task2_tables/ecd90c980458424295a7b13a00000000_20x10.table
+Table saved to task2_tables/ee3228cc98e5e116cd55cac800000000_20x10.table
+Table saved to task2_tables/68b838c339f59f3c81268f7500000000_20x10.table
+Table saved to task2_tables/fa0c969236b6f0854db2003a00000000_20x10.table
+Table saved to task2_tables/387d3fd4fcc66ef47e902da100000000_20x10.table
+Table saved to task2_tables/b09f4f469d0c288f94a37e3600000000_20x10.table
+Table saved to task2_tables/5e1c636ce365d6fdc5d9b2cf00000000_20x10.table
+Table saved to task2_tables/21ea693b45bf0edc032b066100000000_20x10.table
+Table saved to task2_tables/641b6ff60d82cff5d08dcde400000000_20x10.table
+Table saved to task2_tables/bb2c7cbbe9cebee9b6a761d300000000_20x10.table
+Table saved to task2_tables/72776437c11a647cff7133ed00000000_20x10.table
+Table saved to task2_tables/748b38d694a564fae6c6305e00000000_20x10.table
+Table saved to task2_tables/cc2b581d855ce3f250c7f41e00000000_20x10.table
+Table saved to task2_tables/7c8c1134abc7f27423ee0b9000000000_20x10.table
+Table saved to task2_tables/4428d4816040f904e45222bf00000000_20x10.table
+Table saved to task2_tables/6320758af5ceac43381ed93a00000000_20x10.table
+Table saved to task2_tables/aed444fa3075f25ff89dcd9700000000_20x10.table
+Table saved to task2_tables/dfb7544576a5049dea1720a900000000_20x10.table
+Table saved to task2_tables/a32722f31e97d6f087810f8e00000000_20x10.table
+Table saved to task2_tables/b14ae6adddfa031078242bc500000000_20x10.table
+Table saved to task2_tables/c471bb188315ca92c5c0257000000000_20x10.table
+Table saved to task2_tables/931fd69299f9a77e6e344ea000000000_20x10.table
+Table saved to task2_tables/223d767267df7b009b6ef6be00000000_20x10.table
+Table saved to task2_tables/caf1f204aea1d86915498a4200000000_20x10.table
+Table saved to task2_tables/67f9bdf95f09d9658f57ef9d00000000_20x10.table
+Table saved to task2_tables/109af2fb3862b1df423d0a2200000000_20x10.table
+Table saved to task2_tables/728b13d05b74c2d94a00b6f900000000_20x10.table
+Table saved to task2_tables/1163bc562fba9d554db8d45c00000000_20x10.table
+Table saved to task2_tables/fc6dc4a5a0cd60e7b19fba6900000000_20x10.table
+Table saved to task2_tables/6af9f0fc94fe824935bde1ee00000000_20x10.table
+Table saved to task2_tables/6a512b03d228ecaf4fa1636800000000_20x10.table
+Table saved to task2_tables/bae33e412354ca61e24e1a5b00000000_20x10.table
+Table saved to task2_tables/f9473fa2f0f585bee06f632d00000000_20x10.table
+Table saved to task2_tables/ae3c25af199642276653180100000000_20x10.table
+Table saved to task2_tables/685bd2f695b9daa337ea7c9900000000_20x10.table
+Table saved to task2_tables/a123f4221c77399ea2646edc00000000_20x10.table
+Table saved to task2_tables/3b575c61a689e12fe9c15e1000000000_20x10.table
+Table saved to task2_tables/d20c2af90c12e45e56c9a20500000000_20x10.table
+Table saved to task2_tables/82f05d453dbdb50c542e0e4a00000000_20x10.table
+Table saved to task2_tables/1d38848a2719cf986b1cb1a700000000_20x10.table
+Table saved to task2_tables/5ff27ec6e1c5c50a6c33f69100000000_20x10.table
+Table saved to task2_tables/cada92e2b26c994f48f9462100000000_20x10.table
+Table saved to task2_tables/60bf5084fcc8c8213d5507c400000000_20x10.table
+Table saved to task2_tables/1f8139d8294bc6176f9e7cea00000000_20x10.table
+Table saved to task2_tables/a140beefe2fcac97a59ac64300000000_20x10.table
+Table saved to task2_tables/d2b731d71cd4c2d8059acb3c00000000_20x10.table
+Table saved to task2_tables/5c6a866d46360a15bd8841bf00000000_20x10.table
+Table saved to task2_tables/fdd41514adb7b03647a9f38700000000_20x10.table
+Table saved to task2_tables/f8f3881a5dcc01282562298500000000_20x10.table
+Table saved to task2_tables/32de30bc18740cc9965c3e1200000000_20x10.table
+Table saved to task2_tables/3aac2706c3d5a27ecc56cdc200000000_20x10.table
+Table saved to task2_tables/3caf6aa5c9be20f9bd8bd0be00000000_20x10.table
+Table saved to task2_tables/7133d251f0db6e5ef9efb15300000000_20x10.table
+Table saved to task2_tables/b3116d0f2b28170f2eff6c0f00000000_20x10.table
+Table saved to task2_tables/cacc3dbc290f53561aded92b00000000_20x10.table
+Table saved to task2_tables/2bec91fd287d26736c46f1d900000000_20x10.table
+Table saved to task2_tables/39f277bc0662cf2ae5635c1e00000000_20x10.table
+Table saved to task2_tables/de675985bc7ae787b9450dd000000000_20x10.table
+Table saved to task2_tables/20a59a144e7ebef8e336516400000000_20x10.table
+Table saved to task2_tables/c2a6a54e0c9a1701ab09d88d00000000_20x10.table
+Table saved to task2_tables/50b0390cd86b9faa01e2646400000000_20x10.table
+Table saved to task2_tables/6ca8b7385be2e05915db52b200000000_20x10.table
+Table saved to task2_tables/446e886015c3ed7a6eaaab6500000000_20x10.table
+Table saved to task2_tables/003e42b1068fa0eb6fc395ea00000000_20x10.table
+Table saved to task2_tables/f65cc434f76c6e512fbcf09000000000_20x10.table
+Table saved to task2_tables/887e3b36f6ca081a3e2fb81e00000000_20x10.table
+Table saved to task2_tables/a61458335ead56516f44b74000000000_20x10.table
+Table saved to task2_tables/1807c996aba1a7fe8e71d50d00000000_20x10.table
+Table saved to task2_tables/d04133e29f7597777b68890b00000000_20x10.table
+Table saved to task2_tables/c5cf9bd61c0aff4b3e25652800000000_20x10.table
+Table saved to task2_tables/d1989a65a68ebd65f320b2be00000000_20x10.table
+Table saved to task2_tables/821598b148e3d8aa78d3485900000000_20x10.table
+Table saved to task2_tables/3991ab536fdd2613e89aecd400000000_20x10.table
+Table saved to task2_tables/10d73560b00a31082693dfbd00000000_20x10.table
+./hellman  52910.48s user 9.09s system 729% cpu 2:00:56.35 total
+
+
+
+
+
+
+./hellman
+Hellman's time-memory tradeoff
+Parameters: K = 4194304, L = 1024
+Using BLAKE2b with 32-byte output
+Table saved to task2_tables/d688d1b2c55d5f39015dec0a00000000_22x10.table
+Table saved to task2_tables/f3b9bff98c653dbdaf40f34000000000_22x10.table
+Table saved to task2_tables/1d3082e6e043c8dd908f337f00000000_22x10.table
+Table saved to task2_tables/00ab86c9c94a1e424d9c6ea500000000_22x10.table
+Table saved to task2_tables/423727946de4a7cdaaea186600000000_22x10.table
+Table saved to task2_tables/1c338103e67a1a0a4d06284e00000000_22x10.table
+Table saved to task2_tables/61542e371a7380148d61842b00000000_22x10.table
+Table saved to task2_tables/48775ec52f2bae4e1e55276800000000_22x10.table
+Table saved to task2_tables/f20aac093c41d1ee3c32929b00000000_22x10.table
+Table saved to task2_tables/4ced7145770ce83668c607b600000000_22x10.table
+Table saved to task2_tables/3ad25fea51550008bb6e29ed00000000_22x10.table
+Table saved to task2_tables/7e4b647ae8113072393f5e1e00000000_22x10.table
+Table saved to task2_tables/35d7d3eb88cd6e2344960d3600000000_22x10.table
+Table saved to task2_tables/aa8a4463af77547d18417c7100000000_22x10.table
+Table saved to task2_tables/667be487601a266f707915ed00000000_22x10.table
+Table saved to task2_tables/9afc4cb91bbdb458a6d6ea9000000000_22x10.table
+Table saved to task2_tables/eb66a43d42fdb0b6fe7a3ec300000000_22x10.table
+Table saved to task2_tables/03e5ad3f59a927fc2529d10900000000_22x10.table
+Table saved to task2_tables/35bd6ab47625d17f8e765e3400000000_22x10.table
+Table saved to task2_tables/c81edf044ec2860db75fdc2600000000_22x10.table
+Table saved to task2_tables/fa7bcec10fe856cc2aae7b6000000000_22x10.table
+Table saved to task2_tables/a4ff16f4c3102e41bdb6896900000000_22x10.table
+Table saved to task2_tables/4fda8b0050897ce596bc5f2700000000_22x10.table
+Table saved to task2_tables/63cd95a3082307b5546829f400000000_22x10.table
+Table saved to task2_tables/193b378cd2c5a1c56509bbe400000000_22x10.table
+Table saved to task2_tables/3f4afe0346081ed07c8f389000000000_22x10.table
+Table saved to task2_tables/9997635ec78610e8189d44d200000000_22x10.table
+Table saved to task2_tables/7ae63d98b539bc2570c565a000000000_22x10.table
+Table saved to task2_tables/c65c52540f838d5cb162793e00000000_22x10.table
+Table saved to task2_tables/e0931d33419997fc38ec2fe900000000_22x10.table
+Table saved to task2_tables/f9455370cb1471b3f9ba610d00000000_22x10.table
+Table saved to task2_tables/c23f04c60b334a2487e11f9800000000_22x10.table
+Table saved to task2_tables/b818669ab46104d725803f2a00000000_22x10.table
+Table saved to task2_tables/cc72d8bc481756bd542cf62d00000000_22x10.table
+Table saved to task2_tables/07953e78c9414c82a5d3ffe700000000_22x10.table
+Table saved to task2_tables/15652a5ef6762edc1e33850100000000_22x10.table
+Table saved to task2_tables/41c0ad55541aa7964104ad6a00000000_22x10.table
+Table saved to task2_tables/fbf45a660c643074de00fcae00000000_22x10.table
+Table saved to task2_tables/55a7ee881226ac3bb4c32cf000000000_22x10.table
+Table saved to task2_tables/b9468775270a841d0337346100000000_22x10.table
+Table saved to task2_tables/7e0b35638b953cecff802b5800000000_22x10.table
+Table saved to task2_tables/54ec9bf7f487faf3348386e000000000_22x10.table
+Table saved to task2_tables/ba545ae3cc837c3be84fb4e000000000_22x10.table
+Table saved to task2_tables/68fe6f8b38a81754dd27d2bd00000000_22x10.table
+Table saved to task2_tables/e689b86f7187256c957a90fd00000000_22x10.table
+Table saved to task2_tables/dec407c5be616ec62cb9fe8200000000_22x10.table
+Table saved to task2_tables/f70e101aff700b16101d4b9000000000_22x10.table
+Table saved to task2_tables/0bf8b9d705b3a4c1832221b500000000_22x10.table
+Table saved to task2_tables/2e9ced24970c4bd4e2ddad0c00000000_22x10.table
+Table saved to task2_tables/287ac0cca07e654278a3c91300000000_22x10.table
+Table saved to task2_tables/4981886c70abe79c7d59284a00000000_22x10.table
+Table saved to task2_tables/826795bbf0248d23f84ac9e200000000_22x10.table
+Table saved to task2_tables/1d9f9a4e64c0c0910a7e8fd600000000_22x10.table
+Table saved to task2_tables/abd5738e239a262fa3fa5dac00000000_22x10.table
+Table saved to task2_tables/7dc40b07c509192144393a7500000000_22x10.table
+Table saved to task2_tables/8923ca3d0a3a93999db2a05f00000000_22x10.table
+Table saved to task2_tables/b3cb994589e88839f42ac1f200000000_22x10.table
+Table saved to task2_tables/2daedfe4ddc3bf611af8f85200000000_22x10.table
+Table saved to task2_tables/142ea3b421b6414703ff03c600000000_22x10.table
+Table saved to task2_tables/260b2b8a56c3df09b01329f400000000_22x10.table
+Table saved to task2_tables/3399ff456090e7ad34f741a000000000_22x10.table
+Table saved to task2_tables/4897f5c17d34e9eea04add8600000000_22x10.table
+Table saved to task2_tables/45140a32f126bcfaa3c24c7c00000000_22x10.table
+Table saved to task2_tables/11a8047fd59cf92a2b37053600000000_22x10.table
+Table saved to task2_tables/32eaaf8cedbc32805f09d12000000000_22x10.table
+Table saved to task2_tables/5d3fd382756f5fb6994ed97300000000_22x10.table
+Table saved to task2_tables/808bfc68b9092ca6983d052a00000000_22x10.table
+Table saved to task2_tables/e563d80492ef35d750f990f500000000_22x10.table
+Table saved to task2_tables/ea7ba98e520f95d782e97c2200000000_22x10.table
+Table saved to task2_tables/59f3aa8dc8f6e1c4f13e95ee00000000_22x10.table
+Table saved to task2_tables/fb73c87e19bf948f04c35b0b00000000_22x10.table
+Table saved to task2_tables/ae0e84eb49c7c7b11697b00100000000_22x10.table
+Table saved to task2_tables/081aee5189c1bba35538c19100000000_22x10.table
+Table saved to task2_tables/51ada7d6e95009e21814874000000000_22x10.table
+Table saved to task2_tables/477ede890571ee363d616c1f00000000_22x10.table
+Table saved to task2_tables/5b0f0009cc7a9e4eab9c202d00000000_22x10.table
+Table saved to task2_tables/2de18c9d14c8056cf172208100000000_22x10.table
+Table saved to task2_tables/be83506157a5afcb7698385300000000_22x10.table
+Table saved to task2_tables/2ba8fd8798705563b92124e400000000_22x10.table
+Table saved to task2_tables/3667f423c77e1b1e633a348a00000000_22x10.table
+Table saved to task2_tables/3bcbf38deca3ea2a8b885c8f00000000_22x10.table
+Table saved to task2_tables/08ab1a489b2cfc80abb2585a00000000_22x10.table
+Table saved to task2_tables/a0d0cf162c43ac970d3568b600000000_22x10.table
+Table saved to task2_tables/eee39aeeeb2fe80d189d3e9300000000_22x10.table
+Table saved to task2_tables/04d2097d6319fc7d13d87f8a00000000_22x10.table
+Table saved to task2_tables/bdd99486b16e96a0ceb7fe9f00000000_22x10.table
+Table saved to task2_tables/379f5e9d44bb5a9b5ec9514100000000_22x10.table
+Table saved to task2_tables/cf29b1dc54e4d60081e921e500000000_22x10.table
+Table saved to task2_tables/42dd4eea43f7da0a803bb08b00000000_22x10.table
+Table saved to task2_tables/215320e596b8b601cc7387e800000000_22x10.table
+Table saved to task2_tables/8931eb7c7189f1e9479a52d100000000_22x10.table
+Table saved to task2_tables/65b2d6e27cb74455c9d7596900000000_22x10.table
+Table saved to task2_tables/c49e770607051ec5a86c2b7800000000_22x10.table
+Table saved to task2_tables/ab6b81b2b00180cf6736491d00000000_22x10.table
+Table saved to task2_tables/a2614cf98873888c5e57bdd800000000_22x10.table
+Table saved to task2_tables/77746b8730cebafe02828a7c00000000_22x10.table
+Table saved to task2_tables/2a9c1ef8512ece1c663a329d00000000_22x10.table
+Table saved to task2_tables/fa4dc235b9a9a37ae3a5488400000000_22x10.table
+Table saved to task2_tables/d1776b9b4c4bf46756d0f50500000000_22x10.table
+Table saved to task2_tables/dfa1e4b5f89e0146aa65153d00000000_22x10.table
+Table saved to task2_tables/a51cd942c8fc6eae5c5b512000000000_22x10.table
+Table saved to task2_tables/b232b462e4155f5ee3ebb98400000000_22x10.table
+Table saved to task2_tables/9ec439b7f14f982994ab34db00000000_22x10.table
+Table saved to task2_tables/ba46299d98519586af355c9500000000_22x10.table
+Table saved to task2_tables/8f10868d5843d92d0982f2ff00000000_22x10.table
+Table saved to task2_tables/330394903d31c861c50e2d2c00000000_22x10.table
+Table saved to task2_tables/d8bd7b22662e55e5fc6a984d00000000_22x10.table
+Table saved to task2_tables/279f15812b93193de1e54cf600000000_22x10.table
+Table saved to task2_tables/848d32fa332ea1bdfc437ea200000000_22x10.table
+Table saved to task2_tables/ab0940348c58aa8fbce63fc000000000_22x10.table
+Table saved to task2_tables/496ced7c893f304e495c30d900000000_22x10.table
+Table saved to task2_tables/36d7fb536c05c01454f6b72600000000_22x10.table
+Table saved to task2_tables/0b1f67eea24f5c9c216bc56900000000_22x10.table
+Table saved to task2_tables/8912f2b0a54303a41091f51500000000_22x10.table
+Table saved to task2_tables/2af031c12ec42f29f99ac48100000000_22x10.table
+Table saved to task2_tables/d7f0ced5d757e3eaa66b000600000000_22x10.table
+Table saved to task2_tables/1c59ee6767882f21e8bd961000000000_22x10.table
+Table saved to task2_tables/58473ddc08ed1584673dda2100000000_22x10.table
+Table saved to task2_tables/df6803cf89b7be27c6286fae00000000_22x10.table
+Table saved to task2_tables/7f00575a0535b03e87b509da00000000_22x10.table
+Table saved to task2_tables/09d4aae409c813f81ff128cb00000000_22x10.table
+Table saved to task2_tables/479bd574f64733918199b6eb00000000_22x10.table
+Table saved to task2_tables/fa0efe37ae5e9755284cf14800000000_22x10.table
+Table saved to task2_tables/4b4b016336ce14380d570e9100000000_22x10.table
+Table saved to task2_tables/5fb57f020958be8d0a64a4a200000000_22x10.table
+Table saved to task2_tables/989749f5158fae23ea42dc4c00000000_22x10.table
+Table saved to task2_tables/d241c646bce9a75680c0e3f400000000_22x10.table
+Table saved to task2_tables/494c59d39fd7a6916685ca8f00000000_22x10.table
+Loaded 128 tables.
+Searching for preimages...
+Iteration 0
+Iteration 1000
+Iteration 2000
+Iteration 3000
+Iteration 4000
+Iteration 5000
+Iteration 6000
+Iteration 7000
+Iteration 8000
+Iteration 9000
+Success rate: 9895/10000
+
+
+
+
+
+
+
+time ./hellman
+Hellman's time-memory tradeoff
+Parameters: K = 16777216, L = 1024
+Using BLAKE2b with 32-byte output
+Loaded 28 tables.
+Searching for preimages...
+Iteration 0
+Iteration 10
+Iteration 20
+Iteration 30
+Iteration 40
+Iteration 50
+Iteration 60
+Iteration 70
+Iteration 80
+Iteration 90
+Iteration 100
+Iteration 110
+Iteration 120
+Iteration 130
+Iteration 140
+Iteration 150
+Iteration 160
+Iteration 170
+Iteration 180
+Iteration 190
+Iteration 200
+Iteration 210
+Iteration 220
+Iteration 230
+Iteration 240
+Iteration 250
+Iteration 260
+Iteration 270
+Iteration 280
+Iteration 290
+Iteration 300
+Iteration 310
+Iteration 320
+Iteration 330
+Iteration 340
+Iteration 350
+<SNIP>
+Iteration 9690
+Iteration 9700
+Iteration 9710
+Iteration 9720
+Iteration 9730
+Iteration 9740
+Iteration 9750
+Iteration 9760
+Iteration 9770
+Iteration 9780
+Iteration 9790
+Iteration 9800
+Iteration 9810
+Iteration 9820
+Iteration 9830
+Iteration 9840
+Iteration 9850
+Iteration 9860
+Iteration 9870
+Iteration 9880
+Iteration 9890
+Iteration 9900
+Iteration 9910
+Iteration 9920
+Iteration 9930
+Iteration 9940
+Iteration 9950
+Iteration 9960
+Iteration 9970
+Iteration 9980
+Iteration 9990
+Success rate: 8361/10000
+./hellman  5591.13s user 8.83s system 463% cpu 20:08.07 total
+
+
+
+
+
+
+
+
+
+
+
+
+time ./hellman
+Hellman's time-memory tradeoff
+Parameters: K = 16777216, L = 1024
+Using BLAKE2b with 32-byte output
+Loaded 28 tables.
+Searching for preimages...
+Iteration 0
+Iteration 10
+Iteration 20
+Iteration 30
+Iteration 40
+Iteration 50
+Iteration 60
+Iteration 70
+Iteration 80
+Iteration 90
+Iteration 100
+Iteration 110
+Iteration 120
+Iteration 130
+Iteration 140
+Iteration 150
+Iteration 160
+Iteration 170
+Iteration 180
+<SNIP>
+Iteration 9580
+Iteration 9590
+Iteration 9600
+Iteration 9610
+Iteration 9620
+Iteration 9630
+Iteration 9640
+Iteration 9650
+Iteration 9660
+Iteration 9670
+Iteration 9680
+Iteration 9690
+Iteration 9700
+Iteration 9710
+Iteration 9720
+Iteration 9730
+Iteration 9740
+Iteration 9750
+Iteration 9760
+Iteration 9770
+Iteration 9780
+Iteration 9790
+Iteration 9800
+Iteration 9810
+Iteration 9820
+Iteration 9830
+Iteration 9840
+Iteration 9850
+Iteration 9860
+Iteration 9870
+Iteration 9880
+Iteration 9890
+Iteration 9900
+Iteration 9910
+Iteration 9920
+Iteration 9930
+Iteration 9940
+Iteration 9950
+Iteration 9960
+Iteration 9970
+Iteration 9980
+Iteration 9990
+Success rate: 7395/10000
+./hellman  6596.48s user 9.24s system 459% cpu 23:56.42 total
+
+
+
+
+
+
+
+
+
+
+Hellman's time-memory tradeoff
+Parameters: K = 4194304, L = 1024
+Using BLAKE2b with 32-byte output
+Loaded 128 tables.
+Searching for preimages...
+Iteration 0
+[0] Input value: 101db616628cd15d121f5ca441a27659fd4b76bf8bf9e840db2f4c256d7fbfbe
+Hash: 302b16e5
+Iteration 10
+Iteration 20
+Iteration 30
+Iteration 40
+Iteration 50
+Iteration 60
+Iteration 70
+Iteration 80
+Iteration 90
+Iteration 100
+Iteration 110
+Iteration 120
+Iteration 130
+Iteration 140
+Iteration 150
+Iteration 160
+Iteration 170
+Iteration 180
+Iteration 190
+Iteration 200
+Iteration 210
+Iteration 220
+Iteration 230
+Iteration 240
+Iteration 250
+Iteration 260
+Iteration 270
+Iteration 280
+Iteration 290
+Iteration 300
+Iteration 310
+Iteration 320
+Iteration 330
+Iteration 340
+Iteration 350
+Iteration 360
+Iteration 370
+Iteration 380
+Iteration 390
+Iteration 400
+Iteration 410
+Iteration 420
+Iteration 430
+Iteration 440
+Iteration 450
+Iteration 460
+Iteration 470
+Iteration 480
+Iteration 490
+Iteration 500
+Iteration 510
+Iteration 520
+Iteration 530
+Iteration 540
+Iteration 550
+Iteration 560
+Iteration 570
+Iteration 580
+Iteration 590
+Iteration 600
+Iteration 610
+Iteration 620
+Iteration 630
+Iteration 640
+Iteration 650
+Iteration 660
+Iteration 670
+Iteration 680
+Iteration 690
+Iteration 700
+Iteration 710
+Iteration 720
+Iteration 730
+Iteration 740
+Iteration 750
+Iteration 760
+Iteration 770
+Iteration 780
+Iteration 790
+Iteration 800
+Iteration 810
+Iteration 820
+Iteration 830
+Iteration 840
+Iteration 850
+Iteration 860
+Iteration 870
+Iteration 880
+Iteration 890
+Iteration 900
+Iteration 910
+Iteration 920
+Iteration 930
+Iteration 940
+Iteration 950
+Iteration 960
+Iteration 970
+Iteration 980
+Iteration 990
+Iteration 1000
+[1000] Input value: 63abce47b0be90c14ea1cfd3843cc69ad57561508b350cf21338d51fc108d25b
+Hash: 8e5caeb5
+Iteration 1010
+Iteration 1020
+Iteration 1030
+Iteration 1040
+Iteration 1050
+Iteration 1060
+Iteration 1070
+Iteration 1080
+Iteration 1090
+Iteration 1100
+Iteration 1110
+Iteration 1120
+Iteration 1130
+Iteration 1140
+Iteration 1150
+Iteration 1160
+Iteration 1170
+Iteration 1180
+Iteration 1190
+Iteration 1200
+Iteration 1210
+Iteration 1220
+Iteration 1230
+Iteration 1240
+Iteration 1250
+Iteration 1260
+Iteration 1270
+Iteration 1280
+Iteration 1290
+Iteration 1300
+Iteration 1310
+Iteration 1320
+Iteration 1330
+Iteration 1340
+Iteration 1350
+Iteration 1360
+Iteration 1370
+Iteration 1380
+Iteration 1390
+Iteration 1400
+Iteration 1410
+Iteration 1420
+Iteration 1430
+Iteration 1440
+Iteration 1450
+Iteration 1460
+Iteration 1470
+Iteration 1480
+Iteration 1490
+Iteration 1500
+Iteration 1510
+Iteration 1520
+Iteration 1530
+Iteration 1540
+Iteration 1550
+Iteration 1560
+Iteration 1570
+Iteration 1580
+Iteration 1590
+Iteration 1600
+Iteration 1610
+Iteration 1620
+Iteration 1630
+Iteration 1640
+Iteration 1650
+Iteration 1660
+Iteration 1670
+Iteration 1680
+Iteration 1690
+Iteration 1700
+Iteration 1710
+Iteration 1720
+Iteration 1730
+Iteration 1740
+Iteration 1750
+Iteration 1760
+Iteration 1770
+Iteration 1780
+Iteration 1790
+Iteration 1800
+Iteration 1810
+Iteration 1820
+Iteration 1830
+Iteration 1840
+Iteration 1850
+Iteration 1860
+Iteration 1870
+Iteration 1880
+Iteration 1890
+Iteration 1900
+Iteration 1910
+Iteration 1920
+Iteration 1930
+Iteration 1940
+Iteration 1950
+Iteration 1960
+Iteration 1970
+Iteration 1980
+Iteration 1990
+Iteration 2000
+[2000] Input value: a61e8474c34561e39f37d7d5a182c1404c1b31e03cdef0af7c935df8a9753ded
+Hash: dbb43805
+Iteration 2010
+Iteration 2020
+Iteration 2030
+Iteration 2040
+Iteration 2050
+Iteration 2060
+Iteration 2070
+Iteration 2080
+Iteration 2090
+Iteration 2100
+Iteration 2110
+Iteration 2120
+Iteration 2130
+Iteration 2140
+Iteration 2150
+Iteration 2160
+Iteration 2170
+Iteration 2180
+Iteration 2190
+Iteration 2200
+Iteration 2210
+Iteration 2220
+Iteration 2230
+Iteration 2240
+Iteration 2250
+Iteration 2260
+Iteration 2270
+Iteration 2280
+Iteration 2290
+Iteration 2300
+Iteration 2310
+Iteration 2320
+Iteration 2330
+Iteration 2340
+Iteration 2350
+Iteration 2360
+Iteration 2370
+Iteration 2380
+Iteration 2390
+Iteration 2400
+Iteration 2410
+Iteration 2420
+Iteration 2430
+Iteration 2440
+Iteration 2450
+Iteration 2460
+Iteration 2470
+Iteration 2480
+Iteration 2490
+Iteration 2500
+Iteration 2510
+Iteration 2520
+Iteration 2530
+Iteration 2540
+Iteration 2550
+Iteration 2560
+Iteration 2570
+Iteration 2580
+Iteration 2590
+Iteration 2600
+Iteration 2610
+Iteration 2620
+Iteration 2630
+Iteration 2640
+Iteration 2650
+Iteration 2660
+Iteration 2670
+Iteration 2680
+Iteration 2690
+Iteration 2700
+Iteration 2710
+Iteration 2720
+Iteration 2730
+Iteration 2740
+Iteration 2750
+Iteration 2760
+Iteration 2770
+Iteration 2780
+Iteration 2790
+Iteration 2800
+Iteration 2810
+Iteration 2820
+Iteration 2830
+Iteration 2840
+Iteration 2850
+Iteration 2860
+Iteration 2870
+Iteration 2880
+Iteration 2890
+Iteration 2900
+Iteration 2910
+Iteration 2920
+Iteration 2930
+Iteration 2940
+Iteration 2950
+Iteration 2960
+Iteration 2970
+Iteration 2980
+Iteration 2990
+Iteration 3000
+[3000] Input value: 7bf550e985c2c7f594981a3cf5cf3ecb31d470dbd88a52dacad3dd964bf1475f
+Hash: c1220ccf
+Iteration 3010
+Iteration 3020
+Iteration 3030
+Iteration 3040
+Iteration 3050
+Iteration 3060
+Iteration 3070
+Iteration 3080
+Iteration 3090
+Iteration 3100
+Iteration 3110
+Iteration 3120
+Iteration 3130
+Iteration 3140
+Iteration 3150
+Iteration 3160
+Iteration 3170
+Iteration 3180
+Iteration 3190
+Iteration 3200
+Iteration 3210
+Iteration 3220
+Iteration 3230
+Iteration 3240
+Iteration 3250
+Iteration 3260
+Iteration 3270
+Iteration 3280
+Iteration 3290
+Iteration 3300
+Iteration 3310
+Iteration 3320
+Iteration 3330
+Iteration 3340
+Iteration 3350
+Iteration 3360
+Iteration 3370
+Iteration 3380
+Iteration 3390
+Iteration 3400
+Iteration 3410
+Iteration 3420
+Iteration 3430
+Iteration 3440
+Iteration 3450
+Iteration 3460
+Iteration 3470
+Iteration 3480
+Iteration 3490
+Iteration 3500
+Iteration 3510
+Iteration 3520
+Iteration 3530
+Iteration 3540
+Iteration 3550
+Iteration 3560
+Iteration 3570
+Iteration 3580
+Iteration 3590
+Iteration 3600
+Iteration 3610
+Iteration 3620
+Iteration 3630
+Iteration 3640
+Iteration 3650
+Iteration 3660
+Iteration 3670
+Iteration 3680
+Iteration 3690
+Iteration 3700
+Iteration 3710
+Iteration 3720
+Iteration 3730
+Iteration 3740
+Iteration 3750
+Iteration 3760
+Iteration 3770
+Iteration 3780
+Iteration 3790
+Iteration 3800
+Iteration 3810
+Iteration 3820
+Iteration 3830
+Iteration 3840
+Iteration 3850
+Iteration 3860
+Iteration 3870
+Iteration 3880
+Iteration 3890
+Iteration 3900
+Iteration 3910
+Iteration 3920
+Iteration 3930
+Iteration 3940
+Iteration 3950
+Iteration 3960
+Iteration 3970
+Iteration 3980
+Iteration 3990
+Iteration 4000
+[4000] Input value: fd5d2746d1a3a3c865b9b29192cef65b4bb73be24ba067c8fbec631d7e7058ec
+Hash: 17c66e11
+Iteration 4010
+Iteration 4020
+Iteration 4030
+Iteration 4040
+Iteration 4050
+Iteration 4060
+Iteration 4070
+Iteration 4080
+Iteration 4090
+Iteration 4100
+Iteration 4110
+Iteration 4120
+Iteration 4130
+Iteration 4140
+Iteration 4150
+Iteration 4160
+Iteration 4170
+Iteration 4180
+Iteration 4190
+Iteration 4200
+Iteration 4210
+Iteration 4220
+Iteration 4230
+Iteration 4240
+Iteration 4250
+Iteration 4260
+Iteration 4270
+Iteration 4280
+Iteration 4290
+Iteration 4300
+Iteration 4310
+Iteration 4320
+Iteration 4330
+Iteration 4340
+Iteration 4350
+Iteration 4360
+Iteration 4370
+Iteration 4380
+Iteration 4390
+Iteration 4400
+Iteration 4410
+Iteration 4420
+Iteration 4430
+Iteration 4440
+Iteration 4450
+Iteration 4460
+Iteration 4470
+Iteration 4480
+Iteration 4490
+Iteration 4500
+Iteration 4510
+Iteration 4520
+Iteration 4530
+Iteration 4540
+Iteration 4550
+Iteration 4560
+Iteration 4570
+Iteration 4580
+Iteration 4590
+Iteration 4600
+Iteration 4610
+Iteration 4620
+Iteration 4630
+Iteration 4640
+Iteration 4650
+Iteration 4660
+Iteration 4670
+Iteration 4680
+Iteration 4690
+Iteration 4700
+Iteration 4710
+Iteration 4720
+Iteration 4730
+Iteration 4740
+Iteration 4750
+Iteration 4760
+Iteration 4770
+Iteration 4780
+Iteration 4790
+Iteration 4800
+Iteration 4810
+Iteration 4820
+Iteration 4830
+Iteration 4840
+Iteration 4850
+Iteration 4860
+Iteration 4870
+Iteration 4880
+Iteration 4890
+Iteration 4900
+Iteration 4910
+Iteration 4920
+Iteration 4930
+Iteration 4940
+Iteration 4950
+Iteration 4960
+Iteration 4970
+Iteration 4980
+Iteration 4990
+Iteration 5000
+[5000] Input value: 7151d7682a9419fcbf1ba320db3e18cb78a55d79d4efa34ed365cfa539df0e2e
+Hash: c47e1e12
+Iteration 5010
+Iteration 5020
+Iteration 5030
+Iteration 5040
+Iteration 5050
+Iteration 5060
+Iteration 5070
+Iteration 5080
+Iteration 5090
+Iteration 5100
+Iteration 5110
+Iteration 5120
+Iteration 5130
+Iteration 5140
+Iteration 5150
+Iteration 5160
+Iteration 5170
+Iteration 5180
+Iteration 5190
+Iteration 5200
+Iteration 5210
+Iteration 5220
+Iteration 5230
+Iteration 5240
+Iteration 5250
+Iteration 5260
+Iteration 5270
+Iteration 5280
+Iteration 5290
+Iteration 5300
+Iteration 5310
+Iteration 5320
+Iteration 5330
+Iteration 5340
+Iteration 5350
+Iteration 5360
+Iteration 5370
+Iteration 5380
+Iteration 5390
+Iteration 5400
+Iteration 5410
+Iteration 5420
+Iteration 5430
+Iteration 5440
+Iteration 5450
+Iteration 5460
+Iteration 5470
+Iteration 5480
+Iteration 5490
+Iteration 5500
+Iteration 5510
+Iteration 5520
+Iteration 5530
+Iteration 5540
+Iteration 5550
+Iteration 5560
+Iteration 5570
+Iteration 5580
+Iteration 5590
+Iteration 5600
+Iteration 5610
+Iteration 5620
+Iteration 5630
+Iteration 5640
+Iteration 5650
+Iteration 5660
+Iteration 5670
+Iteration 5680
+Iteration 5690
+Iteration 5700
+Iteration 5710
+Iteration 5720
+Iteration 5730
+Iteration 5740
+Iteration 5750
+Iteration 5760
+Iteration 5770
+Iteration 5780
+Iteration 5790
+Iteration 5800
+Iteration 5810
+Iteration 5820
+Iteration 5830
+Iteration 5840
+Iteration 5850
+Iteration 5860
+Iteration 5870
+Iteration 5880
+Iteration 5890
+Iteration 5900
+Iteration 5910
+Iteration 5920
+Iteration 5930
+Iteration 5940
+Iteration 5950
+Iteration 5960
+Iteration 5970
+Iteration 5980
+Iteration 5990
+Iteration 6000
+[6000] Input value: 9b845d85093fb0e7dad926738f33521665020191d18b20acb16817c0bed0e741
+Hash: c404cc51
+Iteration 6010
+Iteration 6020
+Iteration 6030
+Iteration 6040
+Iteration 6050
+Iteration 6060
+Iteration 6070
+Iteration 6080
+Iteration 6090
+Iteration 6100
+Iteration 6110
+Iteration 6120
+Iteration 6130
+Iteration 6140
+Iteration 6150
+Iteration 6160
+Iteration 6170
+Iteration 6180
+Iteration 6190
+Iteration 6200
+Iteration 6210
+Iteration 6220
+Iteration 6230
+Iteration 6240
+Iteration 6250
+Iteration 6260
+Iteration 6270
+Iteration 6280
+Iteration 6290
+Iteration 6300
+Iteration 6310
+Iteration 6320
+Iteration 6330
+Iteration 6340
+Iteration 6350
+Iteration 6360
+Iteration 6370
+Iteration 6380
+Iteration 6390
+Iteration 6400
+Iteration 6410
+Iteration 6420
+Iteration 6430
+Iteration 6440
+Iteration 6450
+Iteration 6460
+Iteration 6470
+Iteration 6480
+Iteration 6490
+Iteration 6500
+Iteration 6510
+Iteration 6520
+Iteration 6530
+Iteration 6540
+Iteration 6550
+Iteration 6560
+Iteration 6570
+Iteration 6580
+Iteration 6590
+Iteration 6600
+Iteration 6610
+Iteration 6620
+Iteration 6630
+Iteration 6640
+Iteration 6650
+Iteration 6660
+Iteration 6670
+Iteration 6680
+Iteration 6690
+Iteration 6700
+Iteration 6710
+Iteration 6720
+Iteration 6730
+Iteration 6740
+Iteration 6750
+Iteration 6760
+Iteration 6770
+Iteration 6780
+Iteration 6790
+Iteration 6800
+Iteration 6810
+Iteration 6820
+Iteration 6830
+Iteration 6840
+Iteration 6850
+Iteration 6860
+Iteration 6870
+Iteration 6880
+Iteration 6890
+Iteration 6900
+Iteration 6910
+Iteration 6920
+Iteration 6930
+Iteration 6940
+Iteration 6950
+Iteration 6960
+Iteration 6970
+Iteration 6980
+Iteration 6990
+Iteration 7000
+[7000] Input value: dc1b78444f191d308103d701ee4f0ce0ef1742917ed9012e2b4d855f7dc8e5ff
+Hash: ebd1e051
+Iteration 7010
+Iteration 7020
+Iteration 7030
+Iteration 7040
+Iteration 7050
+Iteration 7060
+Iteration 7070
+Iteration 7080
+Iteration 7090
+Iteration 7100
+Iteration 7110
+Iteration 7120
+Iteration 7130
+Iteration 7140
+Iteration 7150
+Iteration 7160
+Iteration 7170
+Iteration 7180
+Iteration 7190
+Iteration 7200
+Iteration 7210
+Iteration 7220
+Iteration 7230
+Iteration 7240
+Iteration 7250
+Iteration 7260
+Iteration 7270
+Iteration 7280
+Iteration 7290
+Iteration 7300
+Iteration 7310
+Iteration 7320
+Iteration 7330
+Iteration 7340
+Iteration 7350
+Iteration 7360
+Iteration 7370
+Iteration 7380
+Iteration 7390
+Iteration 7400
+Iteration 7410
+Iteration 7420
+Iteration 7430
+Iteration 7440
+Iteration 7450
+Iteration 7460
+Iteration 7470
+Iteration 7480
+Iteration 7490
+Iteration 7500
+Iteration 7510
+Iteration 7520
+Iteration 7530
+Iteration 7540
+Iteration 7550
+Iteration 7560
+Iteration 7570
+Iteration 7580
+Iteration 7590
+Iteration 7600
+Iteration 7610
+Iteration 7620
+Iteration 7630
+Iteration 7640
+Iteration 7650
+Iteration 7660
+Iteration 7670
+Iteration 7680
+Iteration 7690
+Iteration 7700
+Iteration 7710
+Iteration 7720
+Iteration 7730
+Iteration 7740
+Iteration 7750
+Iteration 7760
+Iteration 7770
+Iteration 7780
+Iteration 7790
+Iteration 7800
+Iteration 7810
+Iteration 7820
+Iteration 7830
+Iteration 7840
+Iteration 7850
+Iteration 7860
+Iteration 7870
+Iteration 7880
+Iteration 7890
+Iteration 7900
+Iteration 7910
+Iteration 7920
+Iteration 7930
+Iteration 7940
+Iteration 7950
+Iteration 7960
+Iteration 7970
+Iteration 7980
+Iteration 7990
+Iteration 8000
+[8000] Input value: 973377c40b2786237526bc140593a2372ca065c8973b1458a96075d651474741
+Hash: 021e098b
+Iteration 8010
+Iteration 8020
+Iteration 8030
+Iteration 8040
+Iteration 8050
+Iteration 8060
+Iteration 8070
+Iteration 8080
+Iteration 8090
+Iteration 8100
+Iteration 8110
+Iteration 8120
+Iteration 8130
+Iteration 8140
+Iteration 8150
+Iteration 8160
+Iteration 8170
+Iteration 8180
+Iteration 8190
+Iteration 8200
+Iteration 8210
+Iteration 8220
+Iteration 8230
+Iteration 8240
+Iteration 8250
+Iteration 8260
+Iteration 8270
+Iteration 8280
+Iteration 8290
+Iteration 8300
+Iteration 8310
+Iteration 8320
+Iteration 8330
+Iteration 8340
+Iteration 8350
+Iteration 8360
+Iteration 8370
+Iteration 8380
+Iteration 8390
+Iteration 8400
+Iteration 8410
+Iteration 8420
+Iteration 8430
+Iteration 8440
+Iteration 8450
+Iteration 8460
+Iteration 8470
+Iteration 8480
+Iteration 8490
+Iteration 8500
+Iteration 8510
+Iteration 8520
+Iteration 8530
+Iteration 8540
+Iteration 8550
+Iteration 8560
+Iteration 8570
+Iteration 8580
+Iteration 8590
+Iteration 8600
+Iteration 8610
+Iteration 8620
+Iteration 8630
+Iteration 8640
+Iteration 8650
+Iteration 8660
+Iteration 8670
+Iteration 8680
+Iteration 8690
+Iteration 8700
+Iteration 8710
+Iteration 8720
+Iteration 8730
+Iteration 8740
+Iteration 8750
+Iteration 8760
+Iteration 8770
+Iteration 8780
+Iteration 8790
+Iteration 8800
+Iteration 8810
+Iteration 8820
+Iteration 8830
+Iteration 8840
+Iteration 8850
+Iteration 8860
+Iteration 8870
+Iteration 8880
+Iteration 8890
+Iteration 8900
+Iteration 8910
+Iteration 8920
+Iteration 8930
+Iteration 8940
+Iteration 8950
+Iteration 8960
+Iteration 8970
+Iteration 8980
+Iteration 8990
+Iteration 9000
+[9000] Input value: af6e3120adf81ce4cf5808e84a1d94bd614d3cf77ab9fd3eec5d51c2c1bec8b0
+Hash: 09fee1cd
+Iteration 9010
+Iteration 9020
+Iteration 9030
+Iteration 9040
+Iteration 9050
+Iteration 9060
+Iteration 9070
+Iteration 9080
+Iteration 9090
+Iteration 9100
+Iteration 9110
+Iteration 9120
+Iteration 9130
+Iteration 9140
+Iteration 9150
+Iteration 9160
+Iteration 9170
+Iteration 9180
+Iteration 9190
+Iteration 9200
+Iteration 9210
+Iteration 9220
+Iteration 9230
+Iteration 9240
+Iteration 9250
+Iteration 9260
+Iteration 9270
+Iteration 9280
+Iteration 9290
+Iteration 9300
+Iteration 9310
+Iteration 9320
+Iteration 9330
+Iteration 9340
+Iteration 9350
+Iteration 9360
+Iteration 9370
+Iteration 9380
+Iteration 9390
+Iteration 9400
+Iteration 9410
+Iteration 9420
+Iteration 9430
+Iteration 9440
+Iteration 9450
+Iteration 9460
+Iteration 9470
+Iteration 9480
+Iteration 9490
+Iteration 9500
+Iteration 9510
+Iteration 9520
+Iteration 9530
+Iteration 9540
+Iteration 9550
+Iteration 9560
+Iteration 9570
+Iteration 9580
+Iteration 9590
+Iteration 9600
+Iteration 9610
+Iteration 9620
+Iteration 9630
+Iteration 9640
+Iteration 9650
+Iteration 9660
+Iteration 9670
+Iteration 9680
+Iteration 9690
+Iteration 9700
+Iteration 9710
+Iteration 9720
+Iteration 9730
+Iteration 9740
+Iteration 9750
+Iteration 9760
+Iteration 9770
+Iteration 9780
+Iteration 9790
+Iteration 9800
+Iteration 9810
+Iteration 9820
+Iteration 9830
+Iteration 9840
+Iteration 9850
+Iteration 9860
+Iteration 9870
+Iteration 9880
+Iteration 9890
+Iteration 9900
+Iteration 9910
+Iteration 9920
+Iteration 9930
+Iteration 9940
+Iteration 9950
+Iteration 9960
+Iteration 9970
+Iteration 9980
+Iteration 9990
+Success rate: 9891/10000
